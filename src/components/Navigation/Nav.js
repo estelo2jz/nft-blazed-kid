@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import './nav.scss'
 import IMG from './logo.jpeg'
 import IMG2 from './Logo2.jpeg'
-import IMG3 from './logo2.gif'
+import IMG3 from './logo6.gif'
 
 
 const Nav = () => {
