@@ -10,18 +10,18 @@ const Nav = () => {
   return (
     <div className="nav__container">
       <header>
-        <Link to='/home' class="logo">
+        <Link to='' class="logo">
           {/* <p>BLAZED KID</p> */}
           <img src={IMG3} alt="logo" />
         </Link>
-        <ul class="navigation">
+        {/* <ul class="navigation">
           <li>
             <Link to='/home'>Home</Link>
           </li>
           <li>
             <Link to='/about'>NFT's</Link>
           </li>
-        </ul>
+        </ul> */}
       </header>
     </div>
   );

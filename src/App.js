@@ -9,10 +9,11 @@ function App() {
   return (
     <Router>
       <Nav />
+      <Home />
       <Routes>
-        <Route exact path="/home" element={<Home />} />
+        {/* <Route exact path="/home" element={<Home />} />
         <Route exact path="/about" element={<About />} />
-        <Route path="*" element={<ErrorPage />} />
+        <Route path="*" element={<ErrorPage />} /> */}
       </Routes>
     </Router>
   );
