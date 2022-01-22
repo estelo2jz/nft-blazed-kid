@@ -3,16 +3,46 @@ import { Link } from "react-router-dom";
 import NFTDataOne from "./data";
 import "./home.scss";
 
+import {
+  FaFacebookSquare,
+  FaTwitter,
+  FaInstagram,
+  FaDiscord,
+  FaPinterest,
+} from "react-icons/fa";
+
 const Home = () => {
   return (
     <div id="home" className="home">
       <div className="home__container">
+        <div className="home__socials">
+          <span>
+            <FaTwitter />
+          </span>
+          <span>
+            <FaFacebookSquare />
+          </span>
+          <span>
+            <FaInstagram />
+          </span>
+          <span>
+            <FaDiscord />
+          </span>
+          <span>
+            <FaPinterest />
+          </span>
+        </div>
         <div className="home__summary">
-          <p>Welcome to <span>Blazed</span><span>Kid</span></p>
+          <p>
+            Welcome to <span>Blazed</span>
+            <span>Kid</span>
+          </p>
           <section>
-            These Blazed Kid NTF's has been around for a very short time, but only just now
-            they decided to Blazed themselves, but there is only one problem,
-            they blazing themselves, and they connot be stop. <br></br>The only way to stop them is to capture all 999 Blazed Kid NFT's
+            These Blazed Kid NTF's has been around for a very short time, but
+            only just now they decided to Blazed themselves, but there is only
+            one problem, they blazing themselves, and they connot be stop.{" "}
+            <br></br>The only way to stop them is to capture all 999 Blazed Kid
+            NFT's
           </section>
         </div>
         <div href="#overview" className="home__overview">
@@ -22,14 +52,14 @@ const Home = () => {
             <li>999 Blazed Kid will blazed at the same time.</li>
             <li>Legendary Blazed Kid : There is only 10 of them existed</li>
             <li>
-              Rare Blazed Kid : Less than 15% of them will be rare (Nose Piercing)
+              Rare Blazed Kid : Less than 15% of them will be rare (Nose
+              Piercing)
             </li>
             <li>
-              Uncommon Blazed Kid : Less than 40% of them will be Uncommon (Unique)
+              Uncommon Blazed Kid : Less than 40% of them will be Uncommon
+              (Unique)
             </li>
-            <li>
-              Common Blazed Kid : 50% of the Blazed Kid will be common
-            </li>
+            <li>Common Blazed Kid : 50% of the Blazed Kid will be common</li>
           </ul>
         </div>
       </div>
