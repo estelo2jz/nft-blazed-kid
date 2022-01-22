@@ -13,52 +13,52 @@ import BK10 from "../../assets/images/NFT/bkid010.jpeg";
 const NFTDataOne = [
   {
     title: 'Blazed Kid #001',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK01,
   },
   {
     title: 'Blazed Kid #002',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK02,
   },
   {
     title: 'Blazed Kid #003',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK03,
   },
   {
     title: 'Blazed Kid #004',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK04,
   },
   {
     title: 'Blazed Kid #005',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK05,
   },
   {
     title: 'Blazed Kid #006',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK06,
   },
   {
     title: 'Blazed Kid #007',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK07,
   },
   {
     title: 'Blazed Kid #008',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK08
   },
   {
     title: 'Blazed Kid #009',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK09,
   },
   {
     title: 'Blazed Kid #010',
-    path: '*',
+    path: 'https://rarible.com/items/sale',
     img: BK10,
   },
 ];
