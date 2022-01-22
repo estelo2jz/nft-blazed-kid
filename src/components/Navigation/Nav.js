@@ -10,10 +10,10 @@ const Nav = () => {
   return (
     <div className="nav__container">
       <header>
-        <Link to='' class="logo">
+        <a href="#home" class="logo">
           {/* <p>BLAZED KID</p> */}
           <img src={IMG3} alt="logo" />
-        </Link>
+        </a>
         {/* <ul class="navigation">
           <li>
             <Link to='/home'>Home</Link>

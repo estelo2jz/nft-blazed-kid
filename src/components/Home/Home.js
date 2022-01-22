@@ -5,7 +5,7 @@ import "./home.scss";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div id="home" className="home">
       <div className="home__container">
         <div className="home__summary">
           <p>Welcome to <span>Blazed</span><span>Kid</span></p>
@@ -15,7 +15,7 @@ const Home = () => {
             everytime they blazed themselves, their own teeth start to fall off.
           </section>
         </div>
-        <div className="home__overview">
+        <div href="#overview" className="home__overview">
           <p>OVERVIEW</p>
           <ul>
             <li>​These Blazed Kid are 100% hand-made​</li>
@@ -35,7 +35,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="home__section-content">
+      <div id="overview" className="home__section-content">
         {NFTDataOne.map((item, index) => {
           return (
             <a href={item.path} target="_blank">
