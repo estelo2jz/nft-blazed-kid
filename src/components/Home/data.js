@@ -10,6 +10,17 @@ import BK08 from "../../assets/images/NFT/bkid008.jpeg";
 import BK09 from "../../assets/images/NFT/bkid009.jpeg";
 import BK10 from "../../assets/images/NFT/bkid010.jpeg";
 
+import BK011 from "../../assets/images/NFT/bkid011.png";
+import BK012 from "../../assets/images/NFT/bkid012.png";
+import BK013 from "../../assets/images/NFT/bkid013.png";
+import BK014 from "../../assets/images/NFT/bkid014.png";
+import BK015 from "../../assets/images/NFT/bkid015.png";
+import BK016 from "../../assets/images/NFT/bkid016.png";
+import BK017 from "../../assets/images/NFT/bkid017.png";
+import BK018 from "../../assets/images/NFT/bkid018.png";
+import BK019 from "../../assets/images/NFT/bkid019.png";
+import BK020 from "../../assets/images/NFT/bkid020.png";
+
 const NFTDataOne = [
   {
     title: 'Blazed Kid #001',
@@ -60,6 +71,60 @@ const NFTDataOne = [
     title: 'Blazed Kid #010',
     path: 'https://rarible.com/items/sale',
     img: BK10,
+  },
+
+
+
+
+  {
+    title: 'Blazed Kid #011',
+    path: 'https://rarible.com/items/sale',
+    img: BK011,
+  },
+  {
+    title: 'Blazed Kid #012',
+    path: 'https://rarible.com/items/sale',
+    img: BK012,
+  },
+  {
+    title: 'Blazed Kid #013',
+    path: 'https://rarible.com/items/sale',
+    img: BK013,
+  },
+  {
+    title: 'Blazed Kid #014',
+    path: 'https://rarible.com/items/sale',
+    img: BK014,
+  },
+  {
+    title: 'Blazed Kid #015',
+    path: 'https://rarible.com/items/sale',
+    img: BK015,
+  },
+  {
+    title: 'Blazed Kid #016',
+    path: 'https://rarible.com/items/sale',
+    img: BK016,
+  },
+  {
+    title: 'Blazed Kid #017',
+    path: 'https://rarible.com/items/sale',
+    img: BK017,
+  },
+  {
+    title: 'Blazed Kid #018',
+    path: 'https://rarible.com/items/sale',
+    img: BK018,
+  },
+  {
+    title: 'Blazed Kid #019',
+    path: 'https://rarible.com/items/sale',
+    img: BK019,
+  },
+  {
+    title: 'Blazed Kid #020',
+    path: 'https://rarible.com/items/sale',
+    img: BK020,
   },
 ];
 
