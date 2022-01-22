@@ -12,7 +12,7 @@ const Home = () => {
           <section>
             These Blazed Kid NTF's has been around for a very short time, but only just now
             they decided to Blazed themselves, but there is only one problem,
-            everytime they blazed themselves, their own teeth start to fall off.
+            they blazing themselves, and they connot be stop. <br></br>The only way to stop them is to capture all 999 Blazed Kid NFT's
           </section>
         </div>
         <div href="#overview" className="home__overview">
@@ -25,8 +25,7 @@ const Home = () => {
               Rare Blazed Kid : Less than 15% of them will be rare (Nose Piercing)
             </li>
             <li>
-              Uncommon Blazed Kid : Less than 40% of them will be Uncommon (Unique
-              Braces)
+              Uncommon Blazed Kid : Less than 40% of them will be Uncommon (Unique)
             </li>
             <li>
               Common Blazed Kid : 50% of the Blazed Kid will be common
