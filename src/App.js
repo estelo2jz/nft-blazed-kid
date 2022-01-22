@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Nav from "./components/Navigation/Nav";
 import Home from "./components/Home/Home";
+import Footer from "./components/Footer/Footer";
 import About from "./components/About/About";
 import ErrorPage from "./Pages/ErrorPage";
 
@@ -15,6 +16,7 @@ function App() {
         <Route exact path="/about" element={<About />} />
         <Route path="*" element={<ErrorPage />} /> */}
       </Routes>
+      <Footer />
     </Router>
   );
 }
