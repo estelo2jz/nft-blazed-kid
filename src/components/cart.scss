@@ -3,6 +3,20 @@
   border: 1px solid #ccc;
   transform: scaleY(0.98)
 }
+.cart-icon{
+  position: relative;
+  margin-right: 15px;
+}
+.cart-icon span{
+  background: crimson;
+  border-radius: 20px;
+  color: white;
+  position: absolute;
+  top:-30px;
+  right: -40px;
+  font-size: 10px;
+  padding: 5px;
+}
 .amount span{
   color: crimson;
   padding: 0 20px;
