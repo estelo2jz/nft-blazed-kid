@@ -1,5 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react'
-import { DataContext } from './DataProvider'
+import { DataContext } from './Shop/DataProvider'
 import Colors from './Colors'
 import Sizes from './Sizes'
 import { Link } from 'react-router-dom'
@@ -39,14 +39,14 @@ export default function Cart() {
   }
 
   const removeProduct = id => {
-    if (window.confirm("Do you want to delete this product?")) {
+    // if (window.confirm("Do you want to delete this product?")) {
+    // }
       cart.forEach((item, index) => {
         if (item._id === id) {
           cart.splice(index, 1)
         }
       })
       setCart([...cart])
-    }
   }
 
 
