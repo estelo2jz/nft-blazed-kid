@@ -13,6 +13,9 @@ const SubHeader = () => {
         <span>
           <Link to="/nft">NFT's</Link>
         </span>
+        <span>
+          <Link to="/shop">SHOP</Link>
+        </span>
       </div>
     </div>
   );
