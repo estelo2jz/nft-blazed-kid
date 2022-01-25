@@ -1,6 +1,6 @@
 import React, { useContext, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
-import { DataContext } from "./DataProvider";
+import { DataNFTContext } from "./DataNFTProvider";
 import Colors from "./Colors";
 import Sizes from "./Sizes";
 import DetailsThumb from "./DetailsThumb";
@@ -10,7 +10,7 @@ import "./details.scss";
 
 export default function Details() {
   const { id } = useParams();
-  const value = useContext(DataContext);
+  const value = useContext(DataNFTContext);
   const [products] = value.products;
   const addCart = value.addCart;
 
