@@ -15,23 +15,6 @@ const Home = () => {
   return (
     <div id="home" className="home">
       <div className="home__container">
-        <div className="home__socials">
-          <span>
-            <FaTwitter />
-          </span>
-          <span>
-            <FaFacebookSquare />
-          </span>
-          <span>
-            <FaInstagram />
-          </span>
-          <span>
-            <FaDiscord />
-          </span>
-          <span>
-            <FaPinterest />
-          </span>
-        </div>
         <div className="home__summary">
           <p>
             Welcome to <span>Blazed</span>
@@ -62,6 +45,23 @@ const Home = () => {
             <li>Common Blazed Kid : 50% of the Blazed Kid will be common</li>
           </ul>
         </div>
+        {/* <div className="home__socials">
+          <span>
+            <FaTwitter />
+          </span>
+          <span>
+            <FaFacebookSquare />
+          </span>
+          <span>
+            <FaInstagram />
+          </span>
+          <span>
+            <FaDiscord />
+          </span>
+          <span>
+            <FaPinterest />
+          </span>
+        </div> */}
       </div>
 
       <div id="overview" className="home__section-content">
