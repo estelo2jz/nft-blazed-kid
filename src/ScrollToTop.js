@@ -9,10 +9,10 @@ const ScrollButton = () =>{
   
   const toggleVisible = () => {
     const scrolled = document.documentElement.scrollTop;
-    if (scrolled > 2000){
+    if (scrolled > 3000){
       setVisible(true)
     } 
-    else if (scrolled <= 300){
+    else if (scrolled <= 1000){
       setVisible(false)
     }
   };
