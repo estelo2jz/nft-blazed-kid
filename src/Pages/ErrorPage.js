@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react';
 
-function ErrorPage() {
-  return <div>ERROR! PAGE NOT FOUND</div>;
-}
+const ErrorPage = () => {
+  return <div>
+    <h1>This is an ERROR page!</h1>
+  </div>;
+};
 
 export default ErrorPage;
