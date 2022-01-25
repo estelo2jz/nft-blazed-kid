@@ -1,10 +1,10 @@
 import React, { useContext } from 'react'
-import { DataContext } from './DataProvider'
+import { DataNFTContext } from './DataNFTProvider'
 import { Link } from 'react-router-dom'
 import "./products.scss";
 
 export default function Products() {
-  const value = useContext(DataContext)
+  const value = useContext(DataNFTContext)
   const [products] = value.products
   const addCart = value.addCart
 
