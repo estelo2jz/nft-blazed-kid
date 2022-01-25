@@ -1,34 +1,29 @@
-import "./App.css";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Nav from "./components/Navigation/Nav";
-import Main from "./components/MainPage/Main"
-import Home from "./components/Home/Home";
-import NFT from "./components/NFT/NFT";
-import Footer from "./components/Footer/Footer";
-import ScrollToTop from "./ScrollToTop";
-import ErrorPage from "./Pages/ErrorPage";
+import React from 'react';
+import Header from './components/Header'
+import Products from './components/Products'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { DataProvider } from './components/DataProvider'
+import Details from './components/Details'
+import Cart from './components/Cart'
+
 
 function App() {
   return (
-    <Router>
-      <Nav />
-      <ul class="navigation">
-        <li>
-          <Link to="/home">Home</Link>
-        </li>
-        <li>
-          <Link to="/nft">NFT's</Link>
-        </li>
-      </ul>
-      <ScrollToTop />
-      <Routes>
-        <Route exact path="/" element={<Main />} />
-        <Route exact path="/home" element={<Home />} />
-        <Route exact path="/nft" element={<NFT />} />
-        <Route path="*" element={<ErrorPage />} />
-      </Routes>
-      <Footer />
-    </Router>
+    <DataProvider>
+      <div className="App">
+        <Router>
+          <Header />
+
+          <section>
+            <Routes>
+              <Route path="products" element={<Products />} />
+              <Route path="products/:id" element={<Details />} />
+              <Route path="cart" element={<Cart />} />
+            </Routes>
+          </section>
+        </Router>
+      </div>
+    </DataProvider>
   );
 }
 
