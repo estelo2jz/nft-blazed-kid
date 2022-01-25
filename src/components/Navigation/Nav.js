@@ -4,6 +4,7 @@ import './nav.scss'
 import IMG from './logo.jpeg'
 import IMG2 from './Logo2.jpeg'
 import IMG3 from './logo6.gif'
+import IMG4 from './bkid.gif'
 
 
 const Nav = () => {
@@ -12,7 +13,7 @@ const Nav = () => {
       <header>
         <a href="#home" class="logo">
           {/* <p>BLAZED KID</p> */}
-          <img src={IMG3} alt="logo" />
+          <img src={IMG4} alt="logo" />
         </a>
         {/* <ul class="navigation">
           <li>
