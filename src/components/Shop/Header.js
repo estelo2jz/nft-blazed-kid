@@ -3,7 +3,7 @@ import Menu from './svg/bars-solid.svg'
 import Close from './svg/times-solid.svg'
 import Cart from './svg/cart.svg'
 import { Link } from 'react-router-dom'
-import { DataContext } from './DataProvider'
+import { DataContext } from '../DataProvider'
 
 export default function Header() {
   const [menu, setMenu] = useState(false)
