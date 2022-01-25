@@ -1,14 +1,14 @@
-import BK00 from "../../assets/images/NFT/bkid000.jpeg";
-import BK01 from "../../assets/images/NFT/bkid001.jpeg";
-import BK02 from "../../assets/images/NFT/bkid002.jpeg";
-import BK03 from "../../assets/images/NFT/bkid003.jpeg";
-import BK04 from "../../assets/images/NFT/bkid004.jpeg";
-import BK05 from "../../assets/images/NFT/bkid005.jpeg";
-import BK06 from "../../assets/images/NFT/bkid006.jpeg";
-import BK07 from "../../assets/images/NFT/bkid007.jpeg";
-import BK08 from "../../assets/images/NFT/bkid008.jpeg";
-import BK09 from "../../assets/images/NFT/bkid009.jpeg";
-import BK10 from "../../assets/images/NFT/bkid010.jpeg";
+import BK00 from "../../../assets/images/NFT/bkid000.jpeg";
+import BK01 from "../../../assets/images/NFT/bkid001.jpeg";
+import BK02 from "../../../assets/images/NFT/bkid002.jpeg";
+import BK03 from "../../../assets/images/NFT/bkid003.jpeg";
+import BK04 from "../../../assets/images/NFT/bkid004.jpeg";
+import BK05 from "../../../assets/images/NFT/bkid005.jpeg";
+import BK06 from "../../../assets/images/NFT/bkid006.jpeg";
+import BK07 from "../../../assets/images/NFT/bkid007.jpeg";
+import BK08 from "../../../assets/images/NFT/bkid008.jpeg";
+import BK09 from "../../../assets/images/NFT/bkid009.jpeg";
+import BK10 from "../../../assets/images/NFT/bkid010.jpeg";
 
 const NFTData = [
   {

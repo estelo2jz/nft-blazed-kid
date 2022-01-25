@@ -45,29 +45,12 @@ const Home = () => {
             <li>Common Blazed Kid : 50% of the Blazed Kid will be common</li>
           </ul>
         </div>
-        {/* <div className="home__socials">
-          <span>
-            <FaTwitter />
-          </span>
-          <span>
-            <FaFacebookSquare />
-          </span>
-          <span>
-            <FaInstagram />
-          </span>
-          <span>
-            <FaDiscord />
-          </span>
-          <span>
-            <FaPinterest />
-          </span>
-        </div> */}
       </div>
 
       <div id="overview" className="home__section-content">
         {NFTDataOne.map((item, index) => {
           return (
-            <a href={item.path} target="_blank">
+            <Link to="/nft">
               <div key={index} className="home__nft-container">
                 <div className="home__nft-heading">
                   <h3>{item.title}</h3>
@@ -76,7 +59,7 @@ const Home = () => {
                   <img src={item.img} alt="NTF's" />
                 </div>
               </div>
-            </a>
+            </Link>
           );
         })}
       </div>
@@ -85,3 +68,16 @@ const Home = () => {
 };
 
 export default Home;
+
+{
+  /* <a href={item.path} target="_blank">
+  <div key={index} className="home__nft-container">
+    <div className="home__nft-heading">
+      <h3>{item.title}</h3>
+    </div>
+    <div className="home__nft-img">
+      <img src={item.img} alt="NTF's" />
+    </div>
+  </div>
+</a> */
+}

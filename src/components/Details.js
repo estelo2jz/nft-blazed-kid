@@ -6,6 +6,8 @@ import Sizes from './Sizes'
 import DetailsThumb from './DetailsThumb'
 import { Link } from 'react-router-dom'
 
+import "./details.scss";
+
 export default function Details() {
   const { id } = useParams();
   const value = useContext(DataContext)
@@ -33,21 +35,28 @@ export default function Details() {
       {
         details.map(product => (
           <div className="details" key={product._id}>
-            <div className="img-container" onMouseMove={handleMouseMove}
+          {/* <div className="img-container" onMouseMove={handleMouseMove}
               style={{ backgroundImage: `url(${product.images[index]})` }} ref={imgDiv}
-              onMouseLeave={() => imgDiv.current.style.backgroundPosition = `center`} />
+              onMouseLeave={() => imgDiv.current.style.backgroundPosition = `center`}>
+                <img src={{product.images[index]}} alt="nft-image" />
+              </div> */}
+            <div className="img-container">
+                <img src={product.images[index]} alt="nft-image" />
+              </div>
 
             <div className="box-details">
               <h2 title={product.title}>{product.title}</h2>
-              <h3>${product.price}</h3>
-              <Colors colors={product.colors} />
-              <Sizes sizes={product.sizes} />
+              {/* <h3>${product.price}</h3> */}
+              {/* <Colors colors={product.colors} /> */}
+              {/* <Sizes sizes={product.sizes} /> */}
               <p>{product.description}</p>
               <p>{product.content}</p>
-              <DetailsThumb images={product.images} setIndex={setIndex} />
-              <Link to="/cart" className="cart" onClick={() => addCart(product._id)}>
+              <DetailsThumb images={product.images} setIndex={setIndex} >
+                <img images={product.images} alt="nft--sub-images" />
+              </DetailsThumb>
+              {/* <Link to="/cart" className="cart" onClick={() => addCart(product._id)}>
                 Add to cart
-              </Link>
+              </Link> */}
             </div>
 
           </div>

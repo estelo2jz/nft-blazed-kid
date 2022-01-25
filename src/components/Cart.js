@@ -3,6 +3,7 @@ import { DataContext } from './DataProvider'
 import Colors from './Colors'
 import Sizes from './Sizes'
 import { Link } from 'react-router-dom'
+import "./cart.scss";
 
 export default function Cart() {
   const value = useContext(DataContext)

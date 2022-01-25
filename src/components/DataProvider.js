@@ -1,3 +1,17 @@
+import { v4 as uuidv4 } from 'uuid';
+
+import BK00 from "../assets/images/NFT/bkid000.jpeg";
+import BK01 from "../assets/images/NFT/bkid001.jpeg";
+import BK02 from "../assets/images/NFT/bkid002.jpeg";
+import BK03 from "../assets/images/NFT/bkid003.jpeg";
+import BK04 from "../assets/images/NFT/bkid004.jpeg";
+import BK05 from "../assets/images/NFT/bkid005.jpeg";
+import BK06 from "../assets/images/NFT/bkid006.jpeg";
+import BK07 from "../assets/images/NFT/bkid007.jpeg";
+import BK08 from "../assets/images/NFT/bkid008.jpeg";
+import BK09 from "../assets/images/NFT/bkid009.jpeg";
+import BK010 from "../assets/images/NFT/bkid010.jpeg";
+
 import React, { createContext, useState, useEffect } from 'react'
 
 export const DataContext = createContext();
@@ -5,106 +19,145 @@ export const DataContext = createContext();
 export const DataProvider = (props) => {
   const [products, setProducts] = useState([
     {
-      "_id": "1",
-      "title": "Wacth Product 01",
+      "_id": uuidv4(),
+      "title": "Blazed Kid #001",
+      "links" : "",
       "images": [
-        "https://www.upsieutoc.com/images/2020/07/18/img1.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img2.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img3.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img4.jpg"
+        BK01, BK01, BK01, BK01,
       ],
-      "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
-      "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 101,
+      "price": "",
       "count": 1
     },
     {
-      "_id": "2",
-      "title": "Wacth Product 02",
+      "_id": uuidv4(),
+      "title": "Blazed Kid #002",
+      "links" : "",
       "images": [
-        "https://www.upsieutoc.com/images/2020/07/18/img2.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img1.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img3.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img4.jpg"
+        BK02, BK02, BK02, BK02, 
       ],
-      "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
-      "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 102,
+      "price": "",
       "count": 1
-
     },
     {
-      "_id": "3",
-      "title": "Wacth Product 03",
+      "_id": uuidv4(),
+      "title": "Blazed Kid #003",
+      "links" : "",
       "images": [
-        "https://www.upsieutoc.com/images/2020/07/18/img3.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img2.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img1.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img4.jpg"
+        BK03, BK03, BK03, BK03,
       ],
-      "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
-      "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 103,
+      "price": "",
       "count": 1
-
     },
     {
-      "_id": "4",
-      "title": "Wacth Product 04",
+      "_id": uuidv4(),
+      "title": "Blazed Kid #004",
+      "links" : "",
       "images": [
-        "https://www.upsieutoc.com/images/2020/07/18/img4.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img2.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img3.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img1.jpg"
+        BK04, BK04, BK04, BK04,
       ],
-      "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
-      "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 104,
+      "price": "",
       "count": 1
-
     },
     {
-      "_id": "5",
-      "title": "Wacth Product 05",
+      "_id": uuidv4(),
+      "title": "Blazed Kid #005",
+      "links" : "",
       "images": [
-        "https://www.upsieutoc.com/images/2020/07/18/img5.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img2.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img3.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img4.jpg"
+        BK05, BK05, BK05, BK05,
       ],
-      "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
-      "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 105,
+      "price": "",
       "count": 1
-
     },
     {
-      "_id": "6",
-      "title": "Wacth Product 06",
+      "_id": uuidv4(),
+      "title": "Blazed Kid #006",
+      "links" : "",
       "images": [
-        "https://www.upsieutoc.com/images/2020/07/18/img6.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img2.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img3.jpg",
-        "https://www.upsieutoc.com/images/2020/07/18/img4.jpg"
+        BK06, BK06, BK06, BK06, 
       ],
-      "description": "How to and tutorial videos of cool CSS effect, Web Design ideas,JavaScript libraries, Node.",
-      "content": "Welcome to our channel Dev AT. Here you can learn web designing, UI/UX designing, html css tutorials, css animations and css effects, javascript and jquery tutorials and related so on.",
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 106,
+      "price": "",
       "count": 1
-
-    }
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Blazed Kid #007",
+      "links" : "",
+      "images": [
+        BK07, BK07, BK07, BK07,
+      ],
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": "",
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Blazed Kid #008",
+      "links" : "",
+      "images": [
+        BK08, BK08, BK08, BK08,
+      ],
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": "",
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Blazed Kid #009",
+      "links" : "",
+      "images": [
+        BK09, BK09, BK09, BK09,
+      ],
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": "",
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Blazed Kid #010",
+      "links" : "",
+      "images": [
+        BK010, BK010, BK010, BK010,
+      ],
+      "description": "A collection of Blazed Kid with unique attributes.",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": "",
+      "count": 1
+    },
   ])
 
   const [cart, setCart] = useState([])

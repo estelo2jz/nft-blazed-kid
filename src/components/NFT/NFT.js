@@ -1,12 +1,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import NFTData from "./data";
+import NFTData from "./Data/data";
+import Products from "../Products";
 import "./nft.scss";
 
 const NFT = () => {
   return (
       <div className="about">
-        {NFTData.map((item, index) => {
+        <Products />
+        {/* {NFTData.map((item, index) => {
         return (
           <Link to={item.path}>
             <div key={index} className="about__nft-container">
@@ -19,7 +21,7 @@ const NFT = () => {
             </div>
           </Link>
         );
-      })}
+      })} */}
       </div>
   );
 };
