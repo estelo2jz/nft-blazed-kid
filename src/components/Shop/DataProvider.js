@@ -1,12 +1,7 @@
-// import WhiteT from '../../assets/shop/shirt.jpg'
-// import BlackHoodie from '../../assets/shop/blackhoodie.jpg'
-// import  from '../../assets/shop/blackshirt.jpg'
-// import  from '../../assets/shop/cup.jpg'
-// import  from '../../assets/shop/grayhoodie.jpg'
-// import  from '../../assets/shop/redhoodie.jpg'
-// import  from '../../assets/shop/whitehat.jpg'
-// import  from '../../assets/shop/whitehoodie.jpg'
-// import  from '../../assets/shop/blackcup.jpg'
+// import  from '../../assets/shop/.jpg'
+// import  from '../../assets/shop/.jpg'
+// import  from '../../assets/shop/.jpg'
+// import  from '../../assets/shop/.jpg'
 // import  from '../../assets/shop/.jpg'
 // import  from '../../assets/shop/.jpg'
 // import  from '../../assets/shop/.jpg'
@@ -15,6 +10,46 @@ import BlackCup from '../../assets/shop/blackcup.jpeg'
 import BlackCup1 from '../../assets/shop/blackcup1.jpeg'
 import BlackCup2 from '../../assets/shop/blackcup2.jpeg'
 import BlackCup3 from '../../assets/shop/blackcup3.jpeg'
+
+import BlackShirt from '../../assets/shop/bshirt.jpeg'
+import BlackShirt1 from '../../assets/shop/bshirt1.jpeg'
+import BlackShirt2 from '../../assets/shop/bshirt2.jpeg'
+import BlackShirt3 from '../../assets/shop/bshirt3.jpeg'
+
+import BlackSweatshirt from '../../assets/shop/bsweatshirt.jpeg'
+import BlackSweatshirt1 from '../../assets/shop/bsweatshirt1.jpeg'
+import BlackSweatshirt2 from '../../assets/shop/bsweatshirt2.jpeg'
+import BlackSweatshirt3 from '../../assets/shop/bsweatshirt3.jpeg'
+
+import GraySweatshirt from '../../assets/shop/gsweatshirt.jpeg'
+import GraySweatshirt1 from '../../assets/shop/gsweatshirt1.jpeg'
+import GraySweatshirt2 from '../../assets/shop/gsweatshirt2.jpeg'
+import GraySweatshirt3 from '../../assets/shop/gsweatshirt3.jpeg'
+
+import RedSweatshirt from '../../assets/shop/rsweatshirt.jpeg'
+import RedSweatshirt1 from '../../assets/shop/rsweatshirt1.jpeg'
+import RedSweatshirt2 from '../../assets/shop/rsweatshirt2.jpeg'
+import RedSweatshirt3 from '../../assets/shop/rsweatshirt3.jpeg'
+
+import WhiteCup from '../../assets/shop/wcup.jpeg'
+import WhiteCup1 from '../../assets/shop/wcup1.jpeg'
+import WhiteCup2 from '../../assets/shop/wcup2.jpeg'
+import WhiteCup3 from '../../assets/shop/wcup3.jpeg'
+
+import WhiteHat from '../../assets/shop/what.jpeg'
+import WhiteHat1 from '../../assets/shop/what1.jpeg'
+import WhiteHat2 from '../../assets/shop/what2.jpeg'
+import WhiteHat3 from '../../assets/shop/what3.jpeg'
+
+import WhiteShirt from '../../assets/shop/wshirt.jpeg'
+import WhiteShirt1 from '../../assets/shop/wshirt1.jpeg'
+import WhiteShirt2 from '../../assets/shop/wshirt2.jpeg'
+import WhiteShirt3 from '../../assets/shop/wshirt3.jpeg'
+
+import WhiteSweatshirt from '../../assets/shop/wsweatshirt.jpeg'
+import WhiteSweatshirt1 from '../../assets/shop/wsweatshirt1.jpeg'
+import WhiteSweatshirt2 from '../../assets/shop/wsweatshirt2.jpeg'
+import WhiteSweatshirt3 from '../../assets/shop/wsweatshirt3.jpeg'
 
 import React, { createContext, useState, useEffect } from 'react'
 import { v4 as uuidv4 } from "uuid";
@@ -33,7 +68,111 @@ export const DataProvider = (props) => {
       "content": "White T-shirt.",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 101,
+      "price": 999,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Wacth Product 01",
+      "images": [
+        BlackShirt, BlackShirt1, BlackShirt2, BlackShirt3,
+      ],
+      "description": "White T-shirt.",
+      "content": "White T-shirt.",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 999,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Wacth Product 01",
+      "images": [
+        BlackSweatshirt, BlackSweatshirt1, BlackSweatshirt2, BlackSweatshirt3,
+      ],
+      "description": "White T-shirt.",
+      "content": "White T-shirt.",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 999,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Wacth Product 01",
+      "images": [
+        GraySweatshirt, GraySweatshirt1, GraySweatshirt2, GraySweatshirt3,
+      ],
+      "description": "White T-shirt.",
+      "content": "White T-shirt.",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 999,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Wacth Product 01",
+      "images": [
+        RedSweatshirt, RedSweatshirt1, RedSweatshirt2, RedSweatshirt3,
+      ],
+      "description": "White T-shirt.",
+      "content": "White T-shirt.",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 999,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Wacth Product 01",
+      "images": [
+        WhiteCup, WhiteCup1, WhiteCup2, WhiteCup3,
+      ],
+      "description": "White T-shirt.",
+      "content": "White T-shirt.",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 999,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Wacth Product 01",
+      "images": [
+        WhiteHat, WhiteHat1, WhiteHat2, WhiteHat3,
+      ],
+      "description": "White T-shirt.",
+      "content": "White T-shirt.",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 999,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Wacth Product 01",
+      "images": [
+        WhiteShirt, WhiteShirt1, WhiteShirt2, WhiteShirt3,
+      ],
+      "description": "White T-shirt.",
+      "content": "White T-shirt.",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 999,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Wacth Product 01",
+      "images": [
+        WhiteSweatshirt, WhiteSweatshirt1, WhiteSweatshirt2, WhiteSweatshirt3,
+      ],
+      "description": "White T-shirt.",
+      "content": "White T-shirt.",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 999,
       "count": 1
     },
   ])
