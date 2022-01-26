@@ -2,12 +2,11 @@
   // background-color: red;
   height: 200px;
   padding: 10px;
-  display: flex;
-  // justify-content:center;
-  align-items:center;
+  // display: flex;
+  // align-items:center;
   .subHeader__nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     span {
       padding: 0px 20px;
