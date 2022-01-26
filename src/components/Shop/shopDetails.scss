@@ -1,0 +1,102 @@
+.shop__details {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+
+  .shop__img-container {
+    max-width: 400px;
+
+    img {
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+  }
+
+  .shop__box-details {
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    .shop__box-details__title {
+      h2 {
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        letter-spacing: 2px;
+        font-weight: 300;
+        font-size: 2rem;
+      }
+
+    }
+    .shop__box-details__desc {
+      p {
+        line-height: 1.5;
+        margin: 10px 0;
+        opacity: 0.8;
+        letter-spacing: 2px;
+      }
+      
+    }
+    .shop__box-details__imgs {
+      
+    }
+    .shop__box-details__sizes {
+      
+    }
+    .shop__box-details__price {
+      padding-top: 10px;
+      h3 {
+        color: crimson;
+      }
+      
+    }
+    .shop__box-details__cart {
+      margin-top: 20px;
+      width: 100%;
+      .shop__cart{
+        button  {
+          border: 1px solid #555;
+          background: rgb(0, 0, 0);
+          outline: none;
+          cursor: pointer;
+          color: white;
+          padding: 10px 20px;
+          width: 100%;
+        }
+      }
+      
+    }
+
+    .colors button,
+    .sizes button {
+      width: 35px;
+      height: 35px;
+      margin: 0px 2px;
+      background-color: #fff;
+      cursor: pointer;
+    }
+
+
+
+
+
+    .thumb {
+      display: flex;
+      cursor: pointer;
+    }
+
+    .thumb img {
+
+      display: block;
+      object-fit: cover;
+      margin: 20px;
+      overflow: hidden;
+    }
+  }
+}
+
+
+@media screen and (max-width: 1500px) {}
