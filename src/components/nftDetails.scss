@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+.nft__details {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  // flex-wrap: wrap;
+  padding: 50px;
+  .nft__img-container {
+  
+    max-width: 40%;
+    // width: 100%;
+    margin: 20px;
+    // height: 900px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      width: 60%;
+      // margin: 10px;
+      // height: 900px;
+      // background-position: center;
+      // background-size: cover;
+      // background-repeat: no-repeat;
+      // object-fit: contain;
+    }
+    // &:hover {
+    //   background-size: 150%;
+    //   border: 1px solid #ddd;
+    //   cursor: zoom-in;
+    // }
+  }
+  .nft__box-details {
+    // max-width: 40%;
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    .nft__box__details__title {
+      width: 100%;
+      h2 {
+        width: 100%;
+      }
+    }
+    .nft__box__details__desc {}
+    .nft__details__sub__imgs {
+      .nft__details__thumb {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        img {
+          width: 200px;
+          cursor: pointer;
+        }
+      }
+      padding: 30px 0px;
+    }
+    .nft__details__view {
+      .nft__details__view__socials {
+        display: flex;
+        flex-direction: column;
+        a {
+  
+        }
+      }
+    }
+    h2 {
+     text-transform: uppercase;
+     // color: darkblue;
+     letter-spacing: 5px;
+     font-size: 2rem;
+     font-family: 'Rubik Beastly', cursive;
+  
+  
+   
+   }
+   
+    button,
+    .cart {
+     border: 1px solid #555;
+     outline: none;
+     background: #333;
+     cursor: pointer;
+     color: white;
+     margin-right: 5px;
+     margin-top: 10px;
+   }
+   
+    p {
+     line-height: 1.5;
+     margin: 10px 0;
+     opacity: 0.8;
+   }
+   
+    h3 {
+     color: crimson;
+   }
+   
+    .thumb img {
+     width: 100%;
+     // height: 100px;
+     display: block;
+     object-fit: cover;
+     margin: 5px;
+     overflow: hidden;
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+   }
+   
+    .cart {
+     padding: 10px 25px;
+     text-transform: uppercase;
+     letter-spacing: 2px;
+     display: inline-block;
+   }
+  }
+  
+}
+
+
+
+
+@media screen and (max-width: 1300px) {
+  .nft__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .nft__img-container {
+      width: 100%;
+      img {
+        width: 250px;
+      }
+    }
+
+    .nft__box-details {
+      width: 100%;
+      .thumb {
+        img {
+          // width: 200px;
+        }
+      }
+      .nft__box__details__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .nft__box__details__desc {}
+      .nft__details__sub__imgs {
+        .nft__details__thumb {
+          img {
+            width: 120px;
+          }
+        }
+      }
+      .nft__details__view {
+        .nft__details__view__socials {
+
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nft__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .nft__img-container {
+      width: 100%;
+      img {
+        width: 200px;
+      }
+    }
+
+    .nft__box-details {
+      width: 100%;
+      .thumb {
+        width: 400px;
+        img {
+          // width: 200px;
+        }
+      }
+      .nft__box__details__title {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          font-size: 1.4em;
+          
+        }
+      }
+      .nft__box__details__desc {}
+      .nft__details__sub__imgs {
+        .nft__details__thumb {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 80px;
+          }
+        }
+      }
+      .nft__details__view {
+        .nft__details__view__socials {
+
+        }
+      }
+    }
+  }
+}
