@@ -21,9 +21,9 @@ export default function Shop() {
               </h3>
               <p>{product.description}</p>
               <h4>${product.price}</h4>
-              <button onClick={() => addCart(product._id)}>
+              {/* <button onClick={() => addCart(product._id)}>
                 Add to cart
-              </button>
+              </button> */}
             </div>
           </div>
         ))
