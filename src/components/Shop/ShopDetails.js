@@ -62,7 +62,7 @@ export default function Details() {
               <div className="shop__box-details__cart">
                   {/* to="/cart" */}
                 <Link
-                  to=""
+                  to="/cart"
                   className="shop__cart"
                   onClick={() => addCart(product._id)}
                 >
