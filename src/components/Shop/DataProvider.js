@@ -66,9 +66,9 @@ export const DataProvider = (props) => {
       ],
       "description": "Coffe Mug",
       "content": "",
-      "colors": ["red", "black", "teal"],
-      "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 999,
+      "colors": [],
+      "sizes": [],
+      "price": 13,
       "count": 1
     },
     {
@@ -81,7 +81,7 @@ export const DataProvider = (props) => {
       "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 999,
+      "price": 15,
       "count": 1
     },
     {
@@ -94,7 +94,7 @@ export const DataProvider = (props) => {
       "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 999,
+      "price": 21,
       "count": 1
     },
     {
@@ -107,7 +107,7 @@ export const DataProvider = (props) => {
       "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 999,
+      "price": 21,
       "count": 1
     },
     {
@@ -120,7 +120,7 @@ export const DataProvider = (props) => {
       "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 999,
+      "price": 27,
       "count": 1
     },
     {
@@ -131,9 +131,9 @@ export const DataProvider = (props) => {
       ],
       "description": "Coffe Mug",
       "content": "",
-      "colors": ["red", "black", "teal"],
-      "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 999,
+      "colors": [],
+      "sizes": [],
+      "price": 13,
       "count": 1
     },
     {
@@ -146,7 +146,7 @@ export const DataProvider = (props) => {
       "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 999,
+      "price": 35,
       "count": 1
     },
     {
@@ -159,7 +159,7 @@ export const DataProvider = (props) => {
       "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 999,
+      "price": 20,
       "count": 1
     },
     {
@@ -172,7 +172,7 @@ export const DataProvider = (props) => {
       "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
-      "price": 999,
+      "price": 20,
       "count": 1
     },
   ])
