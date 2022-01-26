@@ -5,9 +5,10 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { DataNFTProvider } from "./components/DataNFTProvider";
 import { DataProvider } from "./components/Shop/DataProvider";
 import NFTDetails from "./components/NFTDetails";
-import Cart from "./components/Cart";
+import Cart from "./components/Shop/Cart";
+import ScrollToTopPage from "./components/ScrollToTopPage";
 
-import ShopDetails from './components/Shop/ShopDetails'
+import ShopDetails from "./components/Shop/ShopDetails";
 
 import Nav from "./components/Navigation/Nav";
 import SubHeader from "./components/Navigation/SubHeader";
@@ -29,18 +30,20 @@ function App() {
             <Nav />
             <SubHeader />
             <section>
-              <Routes>
-                <Route exact path="/nft" element={<Products />} />
-                <Route exact path="/nft/:id" element={<NFTDetails />} />
-                <Route exact path="/shop" element={<Shop />} />
-                <Route exact path="/shop/:id" element={<ShopDetails />} />
-                <Route exact path="/cart" element={<Cart />} />
+              <ScrollToTopPage>
+                <Routes>
+                  <Route exact path="/nft" element={<Products />} />
+                  <Route exact path="/nft/:id" element={<NFTDetails />} />
+                  <Route exact path="/shop" element={<Shop />} />
+                  <Route exact path="/shop/:id" element={<ShopDetails />} />
+                  <Route exact path="/cart" element={<Cart />} />
 
-                <Route exact path="/" element={<Home />} />
-                {/* <Route exact path="/home" element={<Home />} /> */}
-                <Route exact path="/nft" element={<NFT />} />
-                <Route path="*" element={<ErrorPage />} />
-              </Routes>
+                  <Route exact path="/" element={<Home />} />
+                  {/* <Route exact path="/home" element={<Home />} /> */}
+                  <Route exact path="/nft" element={<NFT />} />
+                  <Route path="*" element={<ErrorPage />} />
+                </Routes>
+              </ScrollToTopPage>
             </section>
           </Router>
           <Footer />
