@@ -4,7 +4,7 @@ import Products from "./components/NFTs";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { DataNFTProvider } from "./components/DataNFTProvider";
 import { DataProvider } from "./components/Shop/DataProvider";
-import Details from "./components/Details";
+import NFTDetails from "./components/NFTDetails";
 import Cart from "./components/Cart";
 
 import ShopDetails from './components/Shop/ShopDetails'
@@ -31,7 +31,7 @@ function App() {
             <section>
               <Routes>
                 <Route exact path="/nft" element={<Products />} />
-                <Route exact path="/nft/:id" element={<Details />} />
+                <Route exact path="/nft/:id" element={<NFTDetails />} />
                 <Route exact path="/shop" element={<Shop />} />
                 <Route exact path="/shop/:id" element={<ShopDetails />} />
                 <Route exact path="/cart" element={<Cart />} />
