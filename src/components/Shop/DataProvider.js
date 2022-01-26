@@ -60,12 +60,12 @@ export const DataProvider = (props) => {
   const [products, setProducts] = useState([
     {
       "_id": uuidv4(),
-      "title": "Wacth Product 01",
+      "title": "Black Mug BLAZED KID Logo",
       "images": [
         BlackCup, BlackCup1, BlackCup2, BlackCup3,
       ],
-      "description": "White T-shirt.",
-      "content": "White T-shirt.",
+      "description": "Coffe Mug",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
       "price": 999,
@@ -73,12 +73,12 @@ export const DataProvider = (props) => {
     },
     {
       "_id": uuidv4(),
-      "title": "Wacth Product 01",
+      "title": "Black T-Shirt ",
       "images": [
         BlackShirt, BlackShirt1, BlackShirt2, BlackShirt3,
       ],
-      "description": "White T-shirt.",
-      "content": "White T-shirt.",
+      "description": "Casual t-shirt",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
       "price": 999,
@@ -86,12 +86,12 @@ export const DataProvider = (props) => {
     },
     {
       "_id": uuidv4(),
-      "title": "Wacth Product 01",
+      "title": "Black Sweatshirt",
       "images": [
         BlackSweatshirt, BlackSweatshirt1, BlackSweatshirt2, BlackSweatshirt3,
       ],
-      "description": "White T-shirt.",
-      "content": "White T-shirt.",
+      "description": "Sweatshirt",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
       "price": 999,
@@ -99,12 +99,12 @@ export const DataProvider = (props) => {
     },
     {
       "_id": uuidv4(),
-      "title": "Wacth Product 01",
+      "title": "Gray Sweatshirt",
       "images": [
         GraySweatshirt, GraySweatshirt1, GraySweatshirt2, GraySweatshirt3,
       ],
-      "description": "White T-shirt.",
-      "content": "White T-shirt.",
+      "description": "Sweatshirt",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
       "price": 999,
@@ -112,12 +112,12 @@ export const DataProvider = (props) => {
     },
     {
       "_id": uuidv4(),
-      "title": "Wacth Product 01",
+      "title": "Red Sweatshirt",
       "images": [
         RedSweatshirt, RedSweatshirt1, RedSweatshirt2, RedSweatshirt3,
       ],
-      "description": "White T-shirt.",
-      "content": "White T-shirt.",
+      "description": "Sweatshirt",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
       "price": 999,
@@ -125,12 +125,12 @@ export const DataProvider = (props) => {
     },
     {
       "_id": uuidv4(),
-      "title": "Wacth Product 01",
+      "title": "White Mug",
       "images": [
         WhiteCup, WhiteCup1, WhiteCup2, WhiteCup3,
       ],
-      "description": "White T-shirt.",
-      "content": "White T-shirt.",
+      "description": "Coffe Mug",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
       "price": 999,
@@ -138,12 +138,12 @@ export const DataProvider = (props) => {
     },
     {
       "_id": uuidv4(),
-      "title": "Wacth Product 01",
+      "title": "What Hat",
       "images": [
         WhiteHat, WhiteHat1, WhiteHat2, WhiteHat3,
       ],
-      "description": "White T-shirt.",
-      "content": "White T-shirt.",
+      "description": "Fashion style hat",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
       "price": 999,
@@ -151,12 +151,12 @@ export const DataProvider = (props) => {
     },
     {
       "_id": uuidv4(),
-      "title": "Wacth Product 01",
+      "title": "White T-Shirt",
       "images": [
         WhiteShirt, WhiteShirt1, WhiteShirt2, WhiteShirt3,
       ],
-      "description": "White T-shirt.",
-      "content": "White T-shirt.",
+      "description": "Simple logo shirt",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
       "price": 999,
@@ -164,12 +164,12 @@ export const DataProvider = (props) => {
     },
     {
       "_id": uuidv4(),
-      "title": "Wacth Product 01",
+      "title": "White Sweatshirt",
       "images": [
         WhiteSweatshirt, WhiteSweatshirt1, WhiteSweatshirt2, WhiteSweatshirt3,
       ],
-      "description": "White T-shirt.",
-      "content": "White T-shirt.",
+      "description": "Comfy thick sweatshirt",
+      "content": "",
       "colors": ["red", "black", "teal"],
       "sizes": ["XL", "L", "M", "XM", "LX"],
       "price": 999,
