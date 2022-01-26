@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import { DataNFTContext } from './DataNFTProvider'
 import { Link } from 'react-router-dom'
-import "./products.scss";
+import "./nft.scss";
 
 export default function Products() {
   const value = useContext(DataNFTContext)
@@ -9,14 +9,14 @@ export default function Products() {
   const addCart = value.addCart
 
   return (
-    <div className="products">
+    <div className="nft">
       {
         products.map(product => (
-          <div className="card" key={product._id}>
+          <div className="nft__card" key={product._id}>
             <Link to={`/nft/${product._id}`}>
               <img src={product.images[0]} alt="" />
             </Link>
-            <div className="box">
+            <div className="nft__box">
               <h3 title={product.title}>
                 <Link to={`/nft/${product._id}`}>{product.title}</Link>
               </h3>
