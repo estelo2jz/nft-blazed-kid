@@ -9,6 +9,7 @@ import Cart from "./components/Shop/Cart";
 import ScrollToTopPage from "./components/ScrollToTopPage";
 
 import ShopDetails from "./components/Shop/ShopDetails";
+import Payment from "./components/Shop/Payment/Payment";
 
 import Nav from "./components/Navigation/Nav";
 import SubHeader from "./components/Navigation/SubHeader";
@@ -37,6 +38,7 @@ function App() {
                   <Route exact path="/shop" element={<Shop />} />
                   <Route exact path="/shop/:id" element={<ShopDetails />} />
                   <Route exact path="/cart" element={<Cart />} />
+                  <Route exact path="/payment" element={<Payment />} />
 
                   <Route exact path="/" element={<Home />} />
                   {/* <Route exact path="/home" element={<Home />} /> */}
