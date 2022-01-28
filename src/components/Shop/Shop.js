@@ -10,7 +10,7 @@ export default function Shop() {
 
   return (
     <div className="shop">
-      {products.map((product) => (
+      {products.slice(0, 9).map((product) => (
         <div className="shop__card" key={product._id}>
           <div className="shop__card__img">
             <Link to={`/shop/${product._id}`}>
