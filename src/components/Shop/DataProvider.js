@@ -175,6 +175,86 @@ export const DataProvider = (props) => {
       "price": 20,
       "count": 1
     },
+
+
+    {
+      "_id": uuidv4(),
+      "title": "Featured ITEM",
+      "images": [
+        WhiteSweatshirt, WhiteSweatshirt1, WhiteSweatshirt2, WhiteSweatshirt3,
+      ],
+      "description": "Comfy thick sweatshirt",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 20,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Featured ITEM",
+      "images": [
+        WhiteSweatshirt, WhiteSweatshirt1, WhiteSweatshirt2, WhiteSweatshirt3,
+      ],
+      "description": "Comfy thick sweatshirt",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 20,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Featured ITEM",
+      "images": [
+        WhiteSweatshirt, WhiteSweatshirt1, WhiteSweatshirt2, WhiteSweatshirt3,
+      ],
+      "description": "Comfy thick sweatshirt",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 20,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Featured ITEM",
+      "images": [
+        WhiteSweatshirt, WhiteSweatshirt1, WhiteSweatshirt2, WhiteSweatshirt3,
+      ],
+      "description": "Comfy thick sweatshirt",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 20,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Featured ITEM",
+      "images": [
+        WhiteSweatshirt, WhiteSweatshirt1, WhiteSweatshirt2, WhiteSweatshirt3,
+      ],
+      "description": "Comfy thick sweatshirt",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 20,
+      "count": 1
+    },
+    {
+      "_id": uuidv4(),
+      "title": "Featured ITEM",
+      "images": [
+        WhiteSweatshirt, WhiteSweatshirt1, WhiteSweatshirt2, WhiteSweatshirt3,
+      ],
+      "description": "Comfy thick sweatshirt",
+      "content": "",
+      "colors": ["red", "black", "teal"],
+      "sizes": ["XL", "L", "M", "XM", "LX"],
+      "price": 20,
+      "count": 1
+    },
   ])
 
   const [cart, setCart] = useState([])
