@@ -9,6 +9,8 @@ import Cart from "./components/Shop/Cart";
 import ScrollToTopPage from "./components/ScrollToTopPage";
 
 import ShopDetails from "./components/Shop/ShopDetails";
+import Checkout from "./components/Shop/Checkout/Checkout";
+import Shipping from "./components/Shop/Shipping/Shipping";
 import Payment from "./components/Shop/Payment/Payment";
 
 import Nav from "./components/Navigation/Nav";
@@ -24,33 +26,35 @@ import Shop from "./components/Shop/Shop";
 function App() {
   return (
     <DataProvider>
-      <DataNFTProvider>
-        <div className="App">
-          <ScrollToTop />
-          <Router>
-            <Nav />
-            <SubHeader />
-            <section>
-              <ScrollToTopPage>
-                <Routes>
-                  <Route exact path="/nft" element={<Products />} />
-                  <Route exact path="/nft/:id" element={<NFTDetails />} />
-                  <Route exact path="/shop" element={<Shop />} />
-                  <Route exact path="/shop/:id" element={<ShopDetails />} />
-                  <Route exact path="/cart" element={<Cart />} />
-                  <Route exact path="/payment" element={<Payment />} />
+        <DataNFTProvider>
+          <div className="App">
+            <ScrollToTop />
+            <Router>
+              <Nav />
+              <SubHeader />
+              <section>
+                <ScrollToTopPage>
+                  <Routes>
+                    <Route exact path="/nft" element={<Products />} />
+                    <Route exact path="/nft/:id" element={<NFTDetails />} />
+                    <Route exact path="/shop" element={<Shop />} />
+                    <Route exact path="/shop/:id" element={<ShopDetails />} />
 
-                  <Route exact path="/" element={<Home />} />
-                  {/* <Route exact path="/home" element={<Home />} /> */}
-                  <Route exact path="/nft" element={<NFT />} />
-                  <Route path="*" element={<ErrorPage />} />
-                </Routes>
-              </ScrollToTopPage>
-            </section>
-          </Router>
-          <Footer />
-        </div>
-      </DataNFTProvider>
+                    <Route exact path="/cart" element={<Cart />} />
+                    <Route exact path="/checkout" element={<Checkout />} />
+                    <Route exact path="/shipping" element={<Shipping />} />
+                    <Route exact path="/payment" element={<Payment />} />
+
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/nft" element={<NFT />} />
+                    <Route path="*" element={<ErrorPage />} />
+                  </Routes>
+                </ScrollToTopPage>
+              </section>
+            </Router>
+            <Footer />
+          </div>
+        </DataNFTProvider>
     </DataProvider>
   );
 }
