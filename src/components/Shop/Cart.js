@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "./DataProvider";
 import { Link } from "react-router-dom";
 
-import CartEmpty from '../Shop/Cart/CartEmpty';
+import CartEmpty from "../Shop/Cart/CartEmpty";
 import "./cart.scss";
 
 export default function Cart() {
@@ -48,13 +48,13 @@ export default function Cart() {
     setCart([...cart]);
   };
 
-  if (cart.length === 0)
-    return (
-      <CartEmpty />
-    );
+  if (cart.length === 0) return <CartEmpty />;
 
   return (
     <div className="cart__outer">
+      <div className="cart__total__payment">
+        <Link to="/shop">continue shopping</Link>
+      </div>
       <>
         <div className="cart__main__container">
           {cart.map((product) => (
@@ -63,6 +63,20 @@ export default function Cart() {
                 <img src={product.images[0]} alt="nft-image" />
               </div>
               <div className="cart__details">
+                <div className="cart__details__summary">
+                  <div className="cart__details__title">
+                    <p title={product.title}>{product.title}</p>
+                  </div>
+                  <div className="cart__details__desc">
+                    <p>{product.description}</p>
+                  </div>
+                  <div className="cart__details__content">
+                    <p>{product.content}</p>
+                  </div>
+                  <div className="cart__details__price">
+                    <p>${product.price}</p>
+                  </div>
+                </div>
                 <div className="cart__amount">
                   <button
                     className="cart__count"
@@ -80,20 +94,6 @@ export default function Cart() {
                     +{" "}
                   </button>
                 </div>
-                <div className="cart__details__summary">
-                  <div className="cart__details__title">
-                    <p title={product.title}>{product.title}</p>
-                  </div>
-                  <div className="cart__details__desc">
-                    <p>{product.description}</p>
-                  </div>
-                  <div className="cart__details__content">
-                    <p>{product.content}</p>
-                  </div>
-                  <div className="cart__details__price">
-                    <p>${product.price}</p>
-                  </div>
-                </div>
 
                 <div
                   className="cart__delete"
@@ -107,8 +107,12 @@ export default function Cart() {
         </div>
 
         <div className="cart__total">
-          <Link to="/payment">Payment</Link>
-          <h3>Total: $ {total}</h3>
+          <div className="cart__total__total">
+            <p>Total: <span>$ {total}</span></p>
+          </div>
+          <div className="cart__total__payment">
+            <Link to="/checkout">Checkout</Link>
+          </div>
         </div>
       </>
     </div>
