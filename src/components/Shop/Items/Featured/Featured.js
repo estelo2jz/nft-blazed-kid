@@ -10,7 +10,7 @@ export default function Featured() {
 
   return (
     <div className="featured">
-      {products.slice(9, 15).map((product) => (
+      {products.slice(9, 20).map((product) => (
         <div className="featured__card" key={product._id}>
           <div className="featured__card__img">
           <Link to={`/shop/${product._id}`}>
