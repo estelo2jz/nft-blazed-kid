@@ -2,17 +2,16 @@
   padding-top: 200px;
   padding-bottom: 500px;
   padding: 0px 500px;
+  // margin-bottom: 700px;
 
   .order__top__heading {
-    .order__top__continue {}
-    .order__top__total {
+    .order__top__item {
       padding: 10px 0px;
     }
   }
 
   .order__main__container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    display: flex;
     justify-content: center;
     flex-direction: column;
     // align-items: center;
@@ -21,10 +20,6 @@
     height: 100%;
     border: 1px solid #ccc;
 
-    .shipping {
-      margin: 5px;
-      position: relative;
-      transform: scaleY(0.98);
 
       .order__img__container {
         display: flex;
@@ -43,75 +38,27 @@
         align-items: center;
         padding: 10px;
 
-        .order__details__summary {
-          width: 100%;
 
-          .order__details__title {
-            p {
-              // font-size: clamp(2.2rem, 2.5vw, 2.4rem);
-              font-size: 1.3rem;
-              letter-spacing: 1px;
-            }
+        .order__details__title {
+          p {
+            // font-size: clamp(2.2rem, 2.5vw, 2.4rem);
+            font-size: 1.3rem;
+            letter-spacing: 1px;
           }
-
-          .order__details__price {
-            p {
-              font-size: 2rem;
-            }
-          }
-
-          .order__details__desc {}
-
-          .order__details__content {}
-        }
-
-        .order__amount {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-
-          span {
-            color: crimson;
-            padding: 0 20px;
-          }
-
-          .order__count {
-            width: 40px;
-            height: 30px;
-            border: 1px solid rgb(255, 255, 255);
-            // background: #555;
-            outline: none;
-            cursor: pointer;
-
-          }
-
-        }
-
-        .order__delete {
-          padding: 10px;
-          position: absolute;
-          top: 0;
-          right: 5px;
-          color: crimson;
-          cursor: pointer;
-          font-weight: 900;
         }
       }
-    }
   }
 
   .order__bottom__nav {
     padding: 10px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
 
-    .order__bottom__nav__back {}
-
-    .order__bottom__nav__next {
+    .order__bottom__nav__continue {
       font-size: clamp(1.1rem, 2.5vw, 1.3rem);
       padding: 10px 10px;
-      background-color: rgb(94, 255, 0);
-      font-weight: 700;
+      letter-spacing: 10px;
     }
   }
 }

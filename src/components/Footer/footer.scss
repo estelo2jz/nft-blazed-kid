@@ -7,9 +7,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 500px;
-  bottom: 0;
-  position: relative;
+  position:fixed;
+  left:0px;
+  bottom:0px;
+  z-index:1;
+  width:100%;
+  
   .footer__socials {
     color: white;
     // padding-bottom: 30px;

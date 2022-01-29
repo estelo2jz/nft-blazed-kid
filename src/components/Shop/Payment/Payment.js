@@ -19,6 +19,10 @@ export default function Payment() {
     getTotal();
   }, [cart]);
 
+  const emptyCart = () => {
+    setCart([]);
+  };
+
   return (
     <div className="payment__outer">
       <div className="payment__top__heading">
@@ -36,7 +40,9 @@ export default function Payment() {
               <div className="payment__details">
                 <div className="payment__details__summary">
                   <div className="payment__details__title">
-                    <p title={product.title}>{product.title} x{product.count}</p>
+                    <p title={product.title}>
+                      {product.title} x{product.count}
+                    </p>
                   </div>
                   <div className="payment__details__desc">
                     <p>{product.description}</p>
@@ -52,7 +58,9 @@ export default function Payment() {
             <Link to="/checkout">Return to Shipping</Link>
           </div>
           <div className="payment__bottom__nav__next">
-            <Link to="/complete">Complete Order</Link>
+            <Link to="/order" onClick={() => emptyCart()}>
+              Complete Order
+            </Link>
           </div>
         </div>
       </>

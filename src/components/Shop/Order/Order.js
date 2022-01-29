@@ -18,44 +18,34 @@ export default function Order() {
     };
     getTotal();
   }, [cart]);
+  
 
   return (
     <div className="order__outer">
-      <div className="order__top__heading">
-        <div className="order__top__continue">
-          <p></p>
+      {/* <div className="order__top__heading">
+        <div className="order__top__item">
+          <p>Item's coming your way!</p>
         </div>
-        <div className="order__top__total">
-          <h3>Total: $ {total}</h3>
-        </div>
-      </div>
-      <>
+      </div> */}
+      {/* <>
         <div className="order__main__container">
           {cart.map((product) => (
             <div className="order" key={product._id}>
-              <div className="order__details">
-                <div className="order__details__summary">
-                  <div className="order__details__title">
-                    <p title={product.title}>{product.title} x{product.count}</p>
-                  </div>
-                  <div className="order__details__desc">
-                    <p>{product.description}</p>
-                  </div>
-                </div>
+              <div className="order__details__title">
+                <p title={product.title}>
+                  {product.title} x{product.count}
+                </p>
               </div>
             </div>
           ))}
         </div>
 
-        <div className="order__bottom__nav">
-          <div className="order__bottom__nav__back">
-            <Link to="/checkout">Return to Shipping</Link>
-          </div>
-          <div className="order__bottom__nav__next">
-            <Link to="/payment">Continue to Payment</Link>
-          </div>
+      </> */}
+      <div className="order__bottom__nav">
+        <div className="order__bottom__nav__continue">
+          <Link to="/shop">Continue Shopping</Link>
         </div>
-      </>
+      </div>
     </div>
   );
 }

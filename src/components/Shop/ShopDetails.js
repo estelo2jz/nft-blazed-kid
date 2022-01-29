@@ -64,13 +64,12 @@ export default function Details() {
                 </div>
                 <div className="shop__box-details__cart">
                   {/* to="/cart" */}
-                  <Link
-                    to="/cart"
+                  <div
                     className="shop__cart"
                     onClick={() => addCart(product._id)}
                   >
                     <button>Add to cart</button>
-                  </Link>
+                  </div>
                 </div>
               </div>
             </div>

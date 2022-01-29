@@ -12,6 +12,7 @@ import ShopDetails from "./components/Shop/ShopDetails";
 import Checkout from "./components/Shop/Checkout/Checkout";
 import Shipping from "./components/Shop/Shipping/Shipping";
 import Payment from "./components/Shop/Payment/Payment";
+import Order from "./components/Shop/Order/Order";
 
 import Nav from "./components/Navigation/Nav";
 import SubHeader from "./components/Navigation/SubHeader";
@@ -44,6 +45,7 @@ function App() {
                     <Route exact path="/checkout" element={<Checkout />} />
                     <Route exact path="/shipping" element={<Shipping />} />
                     <Route exact path="/payment" element={<Payment />} />
+                    <Route exact path="/order" element={<Order />} />
 
                     <Route exact path="/" element={<Home />} />
                     <Route exact path="/nft" element={<NFT />} />
