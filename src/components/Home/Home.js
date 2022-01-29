@@ -3,6 +3,9 @@ import { Link } from "react-router-dom";
 import NFTDataOne from "./data";
 import "./home.scss";
 
+import BKBanner from "../../assets/featured/BKBanner.png";
+import BKBannerTM from "./BKBannerTrademark.png";
+
 import {
   FaFacebookSquare,
   FaTwitter,
@@ -63,21 +66,22 @@ const Home = () => {
           );
         })}
       </div>
+
+      <div className="home__bottom">
+        <div className="home__bottom__p">
+          <p>Free Banner Get It Now!</p>
+        </div>
+        <div className="home__bottom__banner">
+          <img src={BKBanner} alt="Banner" />
+        </div>
+        <div className="home__bottom__download">
+          <a href={BKBannerTM} download="BKBanner">
+            Click to download
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
 
 export default Home;
-
-{
-  /* <a href={item.path} target="_blank">
-  <div key={index} className="home__nft-container">
-    <div className="home__nft-heading">
-      <h3>{item.title}</h3>
-    </div>
-    <div className="home__nft-img">
-      <img src={item.img} alt="NTF's" />
-    </div>
-  </div>
-</a> */
-}
