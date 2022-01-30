@@ -57,10 +57,14 @@
     display: flex;
     justify-content: space-between;
 
-    .checkout__bottom__nav__back {}
+    .checkout__bottom__nav__back {
+      font-size: clamp(0.7rem, 2.5vw, 1.3rem);
+
+    }
 
     .checkout__bottom__nav__next {
-      font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+      font-size: clamp(0.7rem, 2.5vw, 1.3rem);
+
       padding: 10px 10px;
       background-color: rgb(94, 255, 0);
     }

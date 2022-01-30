@@ -2,6 +2,8 @@
   padding-top: 200px;
   padding-bottom: 500px;
   padding: 0px 500px;
+  margin-bottom: 300px;
+
   .payment__top__heading {
     .payment__top__continue {}
     .payment__top__total {
@@ -104,10 +106,12 @@
     display: flex;
     justify-content: space-between;
 
-    .payment__bottom__nav__back {}
+    .payment__bottom__nav__back {
+      font-size: clamp(0.7rem, 2.5vw, 1.3rem);
+    }
 
     .payment__bottom__nav__next {
-      font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+      font-size: clamp(0.7rem, 2.5vw, 1.3rem);
       padding: 10px 10px;
       background-color: rgb(94, 255, 0);
       font-weight: 700;
@@ -236,11 +240,11 @@
       }
     }
 
-    .payment__total {
+    .payment__bottom__nav {
 
-      .payment__total__total {}
+      .payment__bottom__nav__back {}
 
-      .payment__total__payment {}
+      .payment__bottom__nav__next {}
     }
   }
 }
