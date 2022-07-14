@@ -49,7 +49,7 @@ export default function NFTDetails() {
               <p>View this NFT on:</p>
               <div className="nft__details__view__socials">
                 <a href={product.src} target="_blank">
-                  Rarible
+                  OpenSea
                 </a>
               </div>
             </div>
