@@ -34,7 +34,7 @@ export const DataNFTProvider = (props) => {
     {
       _id: uuidv4(),
       title: "Blazed Kid Braces Collection",
-      src: "https://rarible.com/items/sale",
+      src: "https://opensea.io/collection/blazed-kid-nft",
       images: [BK01, BK02, BK03, BK04, BK05, BK06, BK07, BK08, BK09, BK010],
       description: "A collection of Blazed Kid with unique attributes.",
       content: "",
