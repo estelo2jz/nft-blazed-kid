@@ -30,16 +30,21 @@ export default function NFTDetails() {
     <>
       {details.map((product) => (
         <div className="nft__details" key={product._id}>
-          <div className="nft__img-container">
-            <img src={product.images[index]} alt="nft-image" />
+          <div className="nft__left-section">
+            <div className="nft__main-heading">
+              <div className="nft__box__details__title">
+                <h2 title={product.title}>{product.title}</h2>
+              </div>
+              <div className="nft__box__details__desc">
+                <p>{product.description}</p>
+              </div>
+            </div>
+
+            <div className="nft__img-container">
+              <img src={product.images[index]} alt="nft-image" />
+            </div>
           </div>
           <div className="nft__box-details">
-            <div className="nft__box__details__title">
-              <h2 title={product.title}>{product.title}</h2>
-            </div>
-            <div className="nft__box__details__desc">
-              <p>{product.description}</p>
-            </div>
             <div className="nft__details__sub__imgs">
               <DetailsThumb images={product.images} setIndex={setIndex}>
                 <img images={product.images} alt="nft-sub-images" />
