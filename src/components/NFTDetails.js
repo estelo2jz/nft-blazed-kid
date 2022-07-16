@@ -51,7 +51,7 @@ export default function NFTDetails() {
               </DetailsThumb>
             </div>
             <div className="nft__details__view">
-              <p>View this NFT on:</p>
+              <p>View on:</p>
               <div className="nft__details__view__socials">
                 <a href={product.src} target="_blank">
                   OpenSea
