@@ -46,7 +46,7 @@ export const DataNFTProvider = (props) => {
     {
       _id: uuidv4(),
       title: "Blazed Kid LOL Collection",
-      // src: "",
+      src: "https://opensea.io/collection/blazed-kid-nft",
       images: [
         BK011,
         BK012,
@@ -186,7 +186,6 @@ export const DataNFTProvider = (props) => {
       price: "",
       count: 1,
     },
-    
 
     // {
     //   "_id": uuidv4(),
@@ -236,6 +235,8 @@ export const DataNFTProvider = (props) => {
   };
 
   return (
-    <DataNFTContext.Provider value={value}>{props.children}</DataNFTContext.Provider>
+    <DataNFTContext.Provider value={value}>
+      {props.children}
+    </DataNFTContext.Provider>
   );
 };
