@@ -1,18 +1,10 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import NFTDataOne from "./data";
 import "./home.scss";
 
 import BKBanner from "../../assets/featured/BKBanner.png";
 import BKBannerTM from "./BKBannerTrademark.png";
-
-import {
-  FaFacebookSquare,
-  FaTwitter,
-  FaInstagram,
-  FaDiscord,
-  FaPinterest,
-} from "react-icons/fa";
+import BKPhone1 from "./Blazked_Kid_Phone-Wallpaper-001.JPG";
+import BKPhone2 from "./Blazked_Kid_Phone-Wallpaper-002.JPG";
 
 const Home = () => {
   return (
@@ -50,34 +42,32 @@ const Home = () => {
         </div>
       </div>
 
-      <div id="overview" className="home__section-content">
-        {NFTDataOne.map((item, index) => {
-          return (
-            <Link to="/nft">
-              <div key={index} className="home__nft-container">
-                <div className="home__nft-heading">
-                  <h3>{item.title}</h3>
-                </div>
-                <div className="home__nft-img">
-                  <img src={item.img} alt="NTF's" />
-                </div>
-              </div>
-            </Link>
-          );
-        })}
-      </div>
-
-      <div className="home__bottom">
-        <div className="home__bottom__p">
-          <p>Free Banner Get It Now!</p>
+      <div className="home__bottom-container">
+        <div className="home__bottom">
+          <div className="home__bottom__p">
+            <p>Free Banner Get It Now!</p>
+          </div>
+          <div className="home__bottom__banner">
+            <img src={BKBanner} alt="Banner" />
+          </div>
+          <div className="home__bottom__download">
+            <a href={BKBannerTM} download="BKBanner">
+              Click to download
+            </a>
+          </div>
         </div>
-        <div className="home__bottom__banner">
-          <img src={BKBanner} alt="Banner" />
-        </div>
-        <div className="home__bottom__download">
-          <a href={BKBannerTM} download="BKBanner">
-            Click to download
-          </a>
+        <div className="home__bottom">
+          <div className="home__bottom__p">
+            <p>Free Phone Wallpaper Get It Now!</p>
+          </div>
+          <div className="home__bottom__banner">
+            <img src={BKPhone1} alt="Banner" />
+          </div>
+          <div className="home__bottom__download">
+            <a href={BKPhone1} download="BKPhone1">
+              Click to download
+            </a>
+          </div>
         </div>
       </div>
     </div>
