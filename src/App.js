@@ -23,6 +23,7 @@ import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./ScrollToTop";
 import ErrorPage from "./Pages/ErrorPage";
 import Shop from "./components/Shop/Shop";
+import Gallery from "./components/Gallery/Gallery";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
                     <Route exact path="/nft" element={<Products />} />
                     <Route exact path="/nft/:id" element={<NFTDetails />} />
                     <Route exact path="/shop" element={<Shop />} />
+                    <Route exact path="/gallery" element={<Gallery />} />
                     <Route exact path="/shop/:id" element={<ShopDetails />} />
 
                     <Route exact path="/cart" element={<Cart />} />
