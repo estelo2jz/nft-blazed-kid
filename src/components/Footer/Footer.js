@@ -12,10 +12,10 @@ const Footer = () => {
   return (
     <div className="footer">
       <div className="footer__socials">
-        <span>
-          <FaTwitter />
-        </span>
-        <span>
+        <a href="https://opensea.io/collection/blazed-kid-nft" target="_blank">
+          <img src="https://storage.googleapis.com/opensea-static/Logomark/OpenSea-Full-Logo%20(dark).png" alt="open-sea-logo" />
+        </a>
+        {/* <span>
           <FaFacebookSquare />
         </span>
         <span>
@@ -26,7 +26,7 @@ const Footer = () => {
         </span>
         <span>
           <FaPinterest />
-        </span>
+        </span> */}
       </div>
       &#169;2022 by Blazed Kid
     </div>
