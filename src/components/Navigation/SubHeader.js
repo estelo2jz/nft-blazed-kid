@@ -17,11 +17,11 @@ const SubHeader = () => {
             <Link to="/">Home</Link>
           </span>
           <span>
+            <Link to="/gallery">Gallery</Link>
+          </span>
+          <span>
             <Link to="/nft">NFT's</Link>
           </span>
-          {/* <span>
-            <Link to="/shop">SHOP</Link>
-          </span> */}
         </div>
         {/* <div className="cart-icon">
           <span>{cart.length}</span>
