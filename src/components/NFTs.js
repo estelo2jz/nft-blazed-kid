@@ -1,17 +1,18 @@
-import React, { useContext } from 'react'
-import { DataNFTContext } from './DataNFTProvider'
-import { Link } from 'react-router-dom'
+import React, { useContext } from "react";
+import { DataNFTContext } from "./DataNFTProvider";
+import { Link } from "react-router-dom";
 import "./nft.scss";
+import Wallpaper from "./Wallpaper";
 
 export default function Products() {
-  const value = useContext(DataNFTContext)
-  const [products] = value.products
-  const addCart = value.addCart
+  const value = useContext(DataNFTContext);
+  const [products] = value.products;
+  const addCart = value.addCart;
 
   return (
-    <div className="nft">
-      {
-        products.map(product => (
+    <>
+      <div className="nft">
+        {products.map((product) => (
           <div className="nft__card" key={product._id}>
             <Link to={`/nft/${product._id}`}>
               <img src={product.images[0]} alt="" />
@@ -23,10 +24,8 @@ export default function Products() {
               <p>{product.description}</p>
             </div>
           </div>
-        ))
-      }
-
-
-    </div>
-  )
+        ))}
+      </div>
+    </>
+  );
 }
