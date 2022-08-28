@@ -2,11 +2,11 @@
 
 .home {
   padding: 10px;
-
+  margin-bottom: 200px;
   .home__container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
     display: flex;
@@ -66,51 +66,20 @@
     }
   }
 
-  .home__section-content {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-
-    a {
-      text-decoration: none;
-    }
-
-    .home__nft-container {
-      padding: 10px 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-
-      .home__nft-heading {
-        color: rgb(0, 0, 0);
-        font-size: clamp(1rem, 2.5vw, 2rem);
-        font-weight: 100;
-        letter-spacing: 1px;
-        font-family: 'Rubik Beastly', cursive;
-      }
-
-      .home__nft-img {
-        grid-gap: 10px;
-
-        img {
-          width: 600px;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-      }
-    }
-  }
-
+.home__bottom-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
   .home__bottom {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 200px 0px;
+    padding: 10px 0px;
+    // width: 50%;
     .home__bottom__p {
       padding: 20px 0px;
-      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
     }
     .home__bottom__banner {
       display: flex;
@@ -126,9 +95,11 @@
     }
     .home__bottom__download {
       padding: 20px 0px;
-      font-size: clamp(1rem, 2.5vw, 2rem);
+      font-size: clamp(1rem, 2.1vw, 1.1rem);
     }
   }
+
+}
 }
 
 
