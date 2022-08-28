@@ -1,5 +1,5 @@
 .footer {
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 195, 255);
   color: white;
   font-size: 10px;
   padding: 10px;
@@ -23,6 +23,20 @@
       font-size: clamp(1rem, 2.2vw, 2.1rem);
       padding: 1px 15px;
       cursor: pointer;
+    }
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0px;
+      img {
+        width: 20%;
+        height: 20%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+
     }
   }
 }
