@@ -1,0 +1,85 @@
+.gallery__container {
+  margin-bottom: 200px;
+  .gallery__section-content {
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  
+    a {
+      text-decoration: none;
+    }
+  
+    .gallery__nft-container {
+      padding: 10px 15px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+  
+      .gallery__nft-heading {
+        color: rgb(0, 0, 0);
+        font-size: clamp(1rem, 2.5vw, 2rem);
+        font-weight: 100;
+        letter-spacing: 1px;
+        font-family: 'Rubik Beastly', cursive;
+      }
+  
+      .gallery__nft-img {
+        grid-gap: 10px;
+  
+        img {
+          width: 600px;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+    }
+  }
+  
+  .gallery__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px 0px;
+    .gallery__bottom__p {
+      padding: 20px 0px;
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+    }
+    .gallery__bottom__banner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        width: 30%;
+        height: 30%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+    .gallery__bottom__download {
+      padding: 20px 0px;
+      font-size: clamp(1rem, 2.5vw, 2rem);
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .gallery__container {
+    .gallery__section-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+
+      .gallery__nft-container {
+        .gallery__nft-heading {}
+
+        .gallery__nft-img {
+          img {
+            width: 160px;
+          }
+        }
+      }
+    }
+  }
+}
