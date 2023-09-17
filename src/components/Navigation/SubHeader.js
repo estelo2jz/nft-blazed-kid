@@ -1,6 +1,6 @@
 import React, { useState, useContext } from "react";
 import Cart from "../svg/cart.svg";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { DataContext } from "../Shop/DataProvider";
 
 import "./subHeader.scss";
@@ -14,19 +14,19 @@ const SubHeader = () => {
       <div className="subHeader__nav">
         <div className="subHeader__nav-inner">
           <span>
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </span>
           <span>
-            <Link to="/gallery">Gallery</Link>
+            <NavLink to="/gallery">Gallery</NavLink>
           </span>
           <span>
-            <Link to="/nft">NFT's</Link>
+            <NavLink to="/nft">NFT's</NavLink>
           </span>
         </div>
         {/* <div className="cart-icon">
           <span>{cart.length}</span>
           <Link to="/cart">
-            <img src={Cart} alt="" width="30" />
+          <img src={Cart} alt="" width="30" />
           </Link>
         </div> */}
       </div>
