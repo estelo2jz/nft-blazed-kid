@@ -1,5 +1,5 @@
 import React from 'react'
-import "./wallpaper.scss";
+import "./wallpaper.sass";
 
 function Wallpaper() {
   return (

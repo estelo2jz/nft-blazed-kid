@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { DataNFTContext } from "./DataNFTProvider";
 import { Link } from "react-router-dom";
-import "./nft.scss";
+import "./nft.sass";
 import Wallpaper from "./Wallpaper";
 
 export default function Products() {

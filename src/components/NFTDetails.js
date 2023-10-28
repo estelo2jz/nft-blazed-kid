@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { DataNFTContext } from "./DataNFTProvider";
 import DetailsThumb from "./DetailsThumb";
 import { Link } from "react-router-dom";
-import "./nftDetails.scss";
+import "./nftDetails.sass";
 
 
 export default function NFTDetails() {

@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "../DataProvider";
 import { Link } from "react-router-dom";
 
-import "./shipping.scss";
+import "./shipping.sass";
 
 export default function Shipping() {
   const value = useContext(DataContext);

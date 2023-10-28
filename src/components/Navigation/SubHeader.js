@@ -3,7 +3,7 @@ import Cart from "../svg/cart.svg";
 import { NavLink } from "react-router-dom";
 import { DataContext } from "../Shop/DataProvider";
 
-import "./subHeader.scss";
+import "./subHeader.sass";
 
 const SubHeader = () => {
   const [menu, setMenu] = useState(false);

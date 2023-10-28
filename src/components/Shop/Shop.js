@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { DataContext } from "./DataProvider";
 import { Link } from "react-router-dom";
-import "./shop.scss";
+import "./shop.sass";
 
 export default function Shop() {
   const value = useContext(DataContext);

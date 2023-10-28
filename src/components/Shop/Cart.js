@@ -3,7 +3,7 @@ import { DataContext } from "./DataProvider";
 import { Link } from "react-router-dom";
 
 import CartEmpty from "../Shop/Cart/CartEmpty";
-import "./cart.scss";
+import "./cart.sass";
 
 export default function Cart() {
   const value = useContext(DataContext);

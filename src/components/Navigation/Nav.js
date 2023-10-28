@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./nav.scss";
+import "./nav.sass";
 import IMG from "./logo.jpeg";
 import IMG2 from "./Logo2.jpeg";
 import IMG3 from "./logo6.gif";
