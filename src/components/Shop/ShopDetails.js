@@ -4,7 +4,7 @@ import { DataContext } from "./DataProvider";
 import Sizes from "./Sizes";
 import DetailsThumb from "./ShopDetailsThumb";
 import { Link } from "react-router-dom";
-import "./shopDetails.";
+import "./shopDetails.sass";
 
 import Featured from "../Shop/Items/Featured/Featured";
 

@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "../DataProvider";
 import { Link } from "react-router-dom";
 
-import "./order.";
+import "./order.sass";
 
 export default function Order() {
   const value = useContext(DataContext);
