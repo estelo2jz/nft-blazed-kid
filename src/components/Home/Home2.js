@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NFTDataOne from "./data";
-import "./home.sass";
+import "./home.scss";
 
 const Home = () => {
   return (

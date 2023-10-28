@@ -1,5 +1,5 @@
 import React from "react";
-import './cartEmpty.sass';
+import './cartEmpty.scss';
 
 const CartEmpty = () => {
   return (

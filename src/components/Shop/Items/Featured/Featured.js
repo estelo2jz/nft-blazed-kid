@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { DataContext } from "../../DataProvider";
 import { Link } from "react-router-dom";
-import "./featured.sass";
+import "./featured.scss";
 
 export default function Featured() {
   const value = useContext(DataContext);

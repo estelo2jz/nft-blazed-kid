@@ -1,5 +1,5 @@
 import React from "react";
-import "./footer.sass";
+import "./footer.scss";
 import {
   FaFacebookSquare,
   FaTwitter,

@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import NFTDataOne from "../Home/data";
-import "./gallery.sass";
+import "./gallery.scss";
 
 function Gallery() {
   return (

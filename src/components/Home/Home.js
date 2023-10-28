@@ -1,5 +1,5 @@
 import React from "react";
-import "./home.sass";
+import "./home.scss";
 
 import BKBanner from "../../assets/featured/BKBanner.png";
 import BKBannerTM from "./BKBannerTrademark.png";

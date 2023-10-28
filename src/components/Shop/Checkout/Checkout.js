@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "../DataProvider";
 import { Link } from "react-router-dom";
 
-import "./checkout.sass";
+import "./checkout.scss";
 
 export default function Checkout() {
   const value = useContext(DataContext);

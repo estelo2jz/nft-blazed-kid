@@ -2,7 +2,7 @@ import React, { useContext, useState, useEffect } from "react";
 import { DataContext } from "../DataProvider";
 import { Link } from "react-router-dom";
 
-import "./payment.sass";
+import "./payment.scss";
 
 export default function Payment() {
   const value = useContext(DataContext);
