@@ -12,52 +12,52 @@ import BK10 from "../../../assets/images/NFT/bkid010.jpeg";
 
 const NFTData = [
   {
-    title: 'Blazed Kid #001',
+    title: 'Blazed Kid #1',
     path: '*',
     img: BK01,
   },
   {
-    title: 'Blazed Kid #002',
+    title: 'Blazed Kid #2',
     path: '*',
     img: BK02,
   },
   {
-    title: 'Blazed Kid #003',
+    title: 'Blazed Kid #3',
     path: '*',
     img: BK03,
   },
   {
-    title: 'Blazed Kid #004',
+    title: 'Blazed Kid #4',
     path: '*',
     img: BK04,
   },
   {
-    title: 'Blazed Kid #005',
+    title: 'Blazed Kid #5',
     path: '*',
     img: BK05,
   },
   {
-    title: 'Blazed Kid #006',
+    title: 'Blazed Kid #6',
     path: '*',
     img: BK06,
   },
   {
-    title: 'Blazed Kid #007',
+    title: 'Blazed Kid #7',
     path: '*',
     img: BK07,
   },
   {
-    title: 'Blazed Kid #008',
+    title: 'Blazed Kid #8',
     path: '*',
     img: BK08
   },
   {
-    title: 'Blazed Kid #009',
+    title: 'Blazed Kid #9',
     path: '*',
     img: BK09,
   },
   {
-    title: 'Blazed Kid #010',
+    title: 'Blazed Kid #10',
     path: '*',
     img: BK10,
   },
