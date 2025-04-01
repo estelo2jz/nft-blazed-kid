@@ -1,7 +1,7 @@
 {
   "name": "nft-blazed-kid",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
     "@tailwindcss/vite": "^4.0.17",
@@ -12,6 +12,7 @@
     "fix": "^0.0.3",
     "force": "^0.0.3",
     "history": "^5.0.0",
+    "pnpm": "^10.7.0",
     "prop-types": "^15.8.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
