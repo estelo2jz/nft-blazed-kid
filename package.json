@@ -1,7 +1,7 @@
 {
   "name": "nft-blazed-kid",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "@expo/vector-icons": "^13.0.0",
     "@tailwindcss/vite": "^4.0.17",
