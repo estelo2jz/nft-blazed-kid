@@ -1,0 +1,46 @@
+{
+  "name": "nft-blazed-kid",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+
+    
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts --openssl-legacy-provider build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "npm run build"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest",
+      ".eslintrc.js",
+      ".eslintrc.json"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.0",
+    "gulp-sass": "^5.1.0",
+    "webpack": "^5.89.0"
+  },
+  "css-loader": "^3.6.0",
+  "sass": "^1.26.10",
+  "sass-loader": "^9.0.2",
+  "style-loader": "^1.2.1",
+  "packageManager": "pnpm@6.3.2"
+}
