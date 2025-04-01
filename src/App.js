@@ -24,6 +24,7 @@ import ErrorPage from "./Pages/ErrorPage";
 import Shop from "./components/Shop/Shop";
 import Gallery from "./components/Gallery/Gallery";
 
+
 function App() {
   return (
     <DataProvider>
