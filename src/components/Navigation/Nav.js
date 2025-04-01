@@ -1,19 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./nav.scss";
-import IMG from "./logo.jpeg";
-import IMG2 from "./Logo2.jpeg";
-import IMG3 from "./logo6.gif";
-import IMG4 from "./bkid.gif";
-import BK from './BK3.png';
+// import IMG from "./logo.jpeg";
+// import IMG2 from "./Logo2.jpeg";
+// import IMG3 from "./logo6.gif";
+// import IMG4 from "./bkid.gif";
+// import BK from './BK3.png';
 
 const Nav = () => {
   return (
     <div className="nav__container">
       <header>
-        <Link to="/" class="logo">
+        {/* <Link to="/" class="logo">
           <img src={BK} alt="logo" />
-        </Link>
+        </Link> */}
         {/* <a href="#home" class="logo">
           <img src={IMG4} alt="logo" />
         </a> */}

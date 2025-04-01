@@ -1,123 +1,210 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
 
-.home {
-  padding: 10px;
-  margin-bottom: 200px;
-  .home__container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    display: flex;
-    // align-items: center;
-    justify-content: center;
-    .home__socials {
-      color: white;
-      padding: 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      span {
-        font-size: clamp(2.2rem, 2.5vw, 2.4rem);
-        padding: 10px 15px;
-        cursor: pointer;
-      }
-      
-    }
-    .home__summary {
-      padding: 5px 20px !important;
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&family=Space+Grotesk:wght@400;600&display=swap');
 
-      p {
-        // Mobile/MidScreen/FullScreen
-        font-size: clamp(3rem, 3.5vw, 3rem);
-        margin: 0;
-        span {
-          letter-spacing: 5px;
-        }
-        padding-bottom: 10px;
-      }
-      section {
-        font-size: clamp(1.2rem, 2.5vw, 1.4rem);
-        width: 100%;
-        // display: flex;
-        // align-items: center;
-        // justify-content: center;
-      }
-    }
-    .home__overview {
-      padding: 20px 20px;
-      p {
-        font-size: clamp(1.5rem, 2.5vw, 2.2rem);
-        width: 100%;
-        letter-spacing: 2px;
-        font-weight: 400;
-      }
-      ul {
-        font-size: clamp(1.2rem, 2.5vw, 1.4em);
-        padding: 0 !important;
-        width: 100%;
-        margin: 10px;
-        li {
-          padding: 3px 0px !important;
-          width: 100%;
-        }
-      }
-    }
-  }
+// Enhanced color palette
+$colors: (
+  primary: #6C3CE1,
+  secondary: #FF3CAC,
+  accent-1: #784BA0,
+  accent-2: #2B86C5,
+  accent-3: #FF6B6B,
+  accent-4: #4ECDC4,
+  dark: #13111C,
+  light: #F8F9FA,
+  gradient-1: linear-gradient(135deg, #FF3CAC 0%, #784BA0 50%, #2B86C5 100%),
+  gradient-2: linear-gradient(45deg, #6C3CE1 0%, #4ECDC4 100%),
+);
 
-.home__bottom-container {
+// Spacing system
+$spacing: (
+  xs: 0.5rem,
+  sm: 1rem,
+  md: 2rem,
+  lg: 3rem,
+  xl: 4rem
+);
+
+// Breakpoints
+$breakpoints: (
+  mobile: 40rem,
+  tablet: 48rem,
+  laptop: 64rem,
+  desktop: 80rem
+);
+
+// Mixins
+@mixin flex($direction: row, $justify: center, $align: center, $gap: 0) {
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-  .home__bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 0px;
-    // width: 50%;
-    .home__bottom__p {
-      padding: 20px 0px;
-      font-size: clamp(1rem, 2.5vw, 1.3rem);
-    }
-    .home__bottom__banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 30%;
-        height: 30%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    }
-    .home__bottom__download {
-      padding: 20px 0px;
-      font-size: clamp(1rem, 2.1vw, 1.1rem);
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+@mixin glass-effect {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+@mixin responsive($breakpoint) {
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+// Modern Reset
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: map-get($colors, dark);
+  color: map-get($colors, light);
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1.6;
+}
+
+// Home Component
+.home {
+  padding: map-get($spacing, md);
+  margin-bottom: 12.5rem;
+  overflow-x: hidden;
+  
+  &__container {
+    position: relative;
+    min-height: 100vh;
+    @include flex(column, center, stretch, map-get($spacing, lg));
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100vw;
+      height: 100%;
+      background: map-get($colors, gradient-1);
+      opacity: 0.1;
+      transform: translateX(-50%);
+      filter: blur(120px);
+      z-index: -1;
     }
   }
 
-}
-}
+  &__socials {
+    @include flex;
+    @include glass-effect;
+    border-radius: 1rem;
+    padding: map-get($spacing, md);
+    
+    span {
+      font-size: clamp(2.2rem, 2.5vw, 2.4rem);
+      padding: map-get($spacing, sm);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: map-get($colors, light);
+      
+      &:hover {
+        transform: translateY(-4px);
+        color: map-get($colors, accent-3);
+      }
+    }
+  }
 
+  &__summary {
+    padding: map-get($spacing, sm) map-get($spacing, lg);
+    
+    p {
+      font-size: clamp(3rem, 3.5vw, 3.5rem);
+      margin-bottom: map-get($spacing, md);
+      background: map-get($colors, gradient-2);
+      -webkit-background-clip: text;
+      color: transparent;
+      
+      span {
+        letter-spacing: 0.3em;
+      }
+    }
 
-@media screen and (max-width: 1000px) {
-  .home {
-    .home__section-content {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    section {
+      font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+      margin: 0 auto;
+      color: rgba(map-get($colors, light), 0.9);
+    }
+  }
 
-      .home__nft-container {
-        .home__nft-heading {}
+  &__overview {
+    padding: map-get($spacing, lg);
+    @include glass-effect;
+    border-radius: 1rem;
+    
+    p {
+      font-size: clamp(1.5rem, 2.5vw, 2.2rem);
+      letter-spacing: 0.125rem;
+      font-weight: 600;
+      color: map-get($colors, accent-4);
+      margin-bottom: map-get($spacing, md);
+    }
 
-        .home__nft-img {
-          img {
-            width: 160px;
-          }
+    ul {
+      font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+      list-style: none;
+      margin: map-get($spacing, md);
+      
+      li {
+        position: relative;
+        padding: map-get($spacing, xs) map-get($spacing, lg);
+        
+        &::before {
+          content: "→";
+          position: absolute;
+          left: 0;
+          color: map-get($colors, accent-1);
+        }
+
+        &:hover {
+          transform: translateX(8px);
+          transition: transform 0.3s ease;
         }
       }
+    }
+  }
+
+  &__bottom-container {
+    @include flex(row, space-evenly, center, map-get($spacing, lg));
+    flex-wrap: wrap;
+    margin-top: map-get($spacing, xl);
+    
+    &__content {
+      @include glass-effect;
+      border-radius: 1rem;
+      padding: map-get($spacing, md);
+      transition: transform 0.3s ease;
+      
+      &:hover {
+        transform: translateY(-8px);
+      }
+    }
+  }
+}
+
+// Responsive Design
+@include responsive(laptop) {
+  .home {
+    &__container {
+      padding: map-get($spacing, sm);
+    }
+    
+    &__summary {
+      text-align: center;
+    }
+    
+    &__bottom-container {
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

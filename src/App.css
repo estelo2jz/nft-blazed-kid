@@ -1,14 +1,14 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #7FFFD4;
+  background-color: #000000 !important;
 }
 
 body::-webkit-scrollbar {
   width: 15px;               /* width of the entire scrollbar */
 }
 body::-webkit-scrollbar-track {
-  background: #7FFFD4;        /* color of the tracking area */
+  background: #000000;        /* color of the tracking area */
 }
 body::-webkit-scrollbar-thumb {
   background-color: #000000;       /* color of the scroll thumb */

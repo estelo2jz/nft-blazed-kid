@@ -2,12 +2,10 @@ import React, { useContext } from "react";
 import { DataNFTContext } from "./DataNFTProvider";
 import { Link } from "react-router-dom";
 import "./nft.scss";
-import Wallpaper from "./Wallpaper";
 
 export default function Products() {
   const value = useContext(DataNFTContext);
   const [products] = value.products;
-  const addCart = value.addCart;
 
   return (
     <>

@@ -1,7 +1,7 @@
 import React from "react";
 // import Header from "./components/Header";
 import Products from "./components/NFTs";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { DataNFTProvider } from "./components/DataNFTProvider";
 import { DataProvider } from "./components/Shop/DataProvider";
 import NFTDetails from "./components/NFTDetails";
@@ -16,7 +16,6 @@ import Order from "./components/Shop/Order/Order";
 
 import Nav from "./components/Navigation/Nav";
 import SubHeader from "./components/Navigation/SubHeader";
-import Main from "./components/MainPage/Main";
 import Home from "./components/Home/Home";
 import NFT from "./components/NFT/NFT";
 import Footer from "./components/Footer/Footer";
@@ -31,6 +30,7 @@ function App() {
         <DataNFTProvider>
           <div className="App">
             <ScrollToTop />
+
             <Router>
               <Nav />
               <SubHeader />

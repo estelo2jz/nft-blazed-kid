@@ -1,4 +1,3 @@
-import BK00 from "../../../assets/images/NFT/bkid000.jpeg";
 import BK01 from "../../../assets/images/NFT/bkid001.jpeg";
 import BK02 from "../../../assets/images/NFT/bkid002.jpeg";
 import BK03 from "../../../assets/images/NFT/bkid003.jpeg";

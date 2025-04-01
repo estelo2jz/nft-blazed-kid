@@ -6,7 +6,6 @@ import "./shop.scss";
 export default function Shop() {
   const value = useContext(DataContext);
   const [products] = value.products;
-  const addCart = value.addCart;
 
   return (
     <div className="shop">

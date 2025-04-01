@@ -6,8 +6,8 @@ import "./order.scss";
 
 export default function Order() {
   const value = useContext(DataContext);
-  const [cart, setCart] = value.cart;
-  const [total, setTotal] = useState(0);
+  const [cart] = value.cart;
+  const [ setTotal] = useState(0);
 
   useEffect(() => {
     const getTotal = () => {

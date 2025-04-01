@@ -1,4 +1,3 @@
-import BK00 from "../../assets/images/NFT/bkid000.jpeg";
 import BK01 from "../../assets/images/NFT/bkid001.jpeg";
 import BK02 from "../../assets/images/NFT/bkid002.jpeg";
 import BK03 from "../../assets/images/NFT/bkid003.jpeg";
@@ -23,53 +22,63 @@ import BK020 from "../../assets/images/NFT/bkid020.png";
 
 const NFTDataOne = [
   {
-    title: 'Blazed Kid #001',
-    path: 'https://rarible.com/items/sale',
+    title: 'Hot Pink',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602451401160523777',
+    currentPrice: '1.1 ETH',
     img: BK01,
   },
   {
-    title: 'Blazed Kid #002',
-    path: 'https://rarible.com/items/sale',
+    title: 'Grumpy',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602452500672151553v',
+    currentPrice: '1.1 ETH',
     img: BK02,
   },
   {
-    title: 'Blazed Kid #003',
-    path: 'https://rarible.com/items/sale',
+    title: 'Neon',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602453600183779329',
+    currentPrice: '1.1 ETH',
     img: BK03,
   },
   {
-    title: 'Blazed Kid #004',
-    path: 'https://rarible.com/items/sale',
+    title: 'Minion',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602454699695407105',
+    currentPrice: '1.1 ETH',
     img: BK04,
   },
   {
-    title: 'Blazed Kid #005',
-    path: 'https://rarible.com/items/sale',
+    title: '420',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602455799207034881',
+    currentPrice: '1.1 ETH',
     img: BK05,
   },
   {
-    title: 'Blazed Kid #006',
-    path: 'https://rarible.com/items/sale',
+    title: 'Blu',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602456898718662657',
+    currentPrice: '1.1 ETH',
     img: BK06,
   },
   {
-    title: 'Blazed Kid #007',
-    path: 'https://rarible.com/items/sale',
+    title: 'Gum',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602457998230290433',
+    currentPrice: '1.1 ETH',
     img: BK07,
   },
   {
-    title: 'Blazed Kid #008',
-    path: 'https://rarible.com/items/sale',
+    title: 'Violets are Blue',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602459097741918209',
+    currentPrice: '1.1 ETH',
     img: BK08
   },
   {
-    title: 'Blazed Kid #009',
-    path: 'https://rarible.com/items/sale',
+    title: 'Babadook',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602460197253545985',
+    currentPrice: '1.1 ETH',
     img: BK09,
   },
   {
-    title: 'Blazed Kid #010',
-    path: 'https://rarible.com/items/sale',
+    title: 'Albino',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602461296765173761',
+    currentPrice: '1.1 ETH',
     img: BK10,
   },
 
@@ -77,53 +86,63 @@ const NFTDataOne = [
 
 
   {
-    title: 'Blazed Kid #011',
-    path: 'https://rarible.com/items/sale',
+    title: 'Blue Water',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602462396276801537',
+    currentPrice: '1.1 ETH',
     img: BK011,
   },
   {
-    title: 'Blazed Kid #012',
-    path: 'https://rarible.com/items/sale',
+    title: 'Green Light',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602463495788429313',
+    currentPrice: '1.1 ETH',
     img: BK012,
   },
   {
-    title: 'Blazed Kid #013',
-    path: 'https://rarible.com/items/sale',
+    title: 'Spoiled',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602464595300057089',
+    currentPrice: '1.1 ETH',
     img: BK013,
   },
   {
-    title: 'Blazed Kid #014',
-    path: 'https://rarible.com/items/sale',
+    title: 'Blue Crush',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602465694811684865',
+    currentPrice: '1.1 ETH',
     img: BK014,
   },
   {
-    title: 'Blazed Kid #015',
-    path: 'https://rarible.com/items/sale',
+    title: 'Cutie',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602466794323312641',
+    currentPrice: '1.1 ETH',
     img: BK015,
   },
   {
-    title: 'Blazed Kid #016',
-    path: 'https://rarible.com/items/sale',
+    title: 'Asphalt',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602467893834940417',
+    currentPrice: '1.1 ETH',
     img: BK016,
   },
   {
-    title: 'Blazed Kid #017',
-    path: 'https://rarible.com/items/sale',
+    title: 'Emo',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602468993346568193',
+    currentPrice: '1.1 ETH',
     img: BK017,
   },
   {
-    title: 'Blazed Kid #018',
-    path: 'https://rarible.com/items/sale',
+    title: 'Gran Torino',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602470092858195969',
+    currentPrice: '1.1 ETH',
     img: BK018,
   },
   {
-    title: 'Blazed Kid #019',
-    path: 'https://rarible.com/items/sale',
+    title: 'Blu Jmin',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602471192369823745',
+    currentPrice: '1.1 ETH',
     img: BK019,
   },
   {
-    title: 'Blazed Kid #020',
-    path: 'https://rarible.com/items/sale',
+    title: 'Albino',
+    path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602461296765173761',
+    currentPrice: '1.1 ETH',
     img: BK020,
   },
 ];

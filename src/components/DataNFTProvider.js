@@ -1,6 +1,5 @@
 import { v4 as uuidv4 } from "uuid";
 
-import BK00 from "../assets/images/NFT/bkid000.jpeg";
 import BK01 from "../assets/images/NFT/bkid001.jpeg";
 import BK02 from "../assets/images/NFT/bkid002.jpeg";
 import BK03 from "../assets/images/NFT/bkid003.jpeg";
@@ -23,7 +22,6 @@ import BK018 from "../assets/images/NFT/bkid018.png";
 import BK019 from "../assets/images/NFT/bkid019.png";
 import BK020 from "../assets/images/NFT/bkid020.png";
 
-import Q000 from "../assets/q-1.gif";
 
 import React, { createContext, useState, useEffect } from "react";
 

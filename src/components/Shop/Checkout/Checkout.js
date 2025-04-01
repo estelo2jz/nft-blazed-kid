@@ -6,7 +6,7 @@ import "./checkout.scss";
 
 export default function Checkout() {
   const value = useContext(DataContext);
-  const [cart, setCart] = value.cart;
+  const [cart] = value.cart;
   const [total, setTotal] = useState(0);
 
   useEffect(() => {

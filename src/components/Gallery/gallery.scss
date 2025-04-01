@@ -1,85 +1,123 @@
-.gallery__container {
-  margin-bottom: 200px;
-  .gallery__section-content {
-    margin-top: 100px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-  
-    a {
-      text-decoration: none;
-    }
-  
-    .gallery__nft-container {
-      padding: 10px 15px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-  
-      .gallery__nft-heading {
-        color: rgb(0, 0, 0);
-        font-size: clamp(1rem, 2.5vw, 2rem);
-        font-weight: 100;
-        letter-spacing: 1px;
-        font-family: 'Rubik Beastly', cursive;
-      }
-  
-      .gallery__nft-img {
-        grid-gap: 10px;
-  
-        img {
-          width: 600px;
-          border-radius: 10%;
-          background-size: cover;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
-      }
-    }
-  }
-  
-  .gallery__bottom {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 200px 0px;
-    .gallery__bottom__p {
-      padding: 20px 0px;
-      font-size: clamp(1rem, 2.5vw, 1.5rem);
-    }
-    .gallery__bottom__banner {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      img {
-        width: 30%;
-        height: 30%;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-      }
-    }
-    .gallery__bottom__download {
-      padding: 20px 0px;
-      font-size: clamp(1rem, 2.5vw, 2rem);
-    }
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+
+// Variables
+$spacing: (
+  sm: 5px,
+  md: 10px,
+  lg: 20px,
+  xl: 30px
+);
+
+$breakpoints: (
+  mobile: 640px,
+  tablet: 768px,
+  laptop: 1024px,
+  desktop: 1280px
+);
+
+// Mixins
+@mixin respond-to($breakpoint) {
+  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
+    @content;
   }
 }
 
-@media screen and (max-width: 1000px) {
-  .gallery__container {
+// Global Styles
+.gallery {
+  &__container {
+    margin-bottom: 200px;
+
     .gallery__section-content {
+      margin-top: 100px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+      gap: map-get($spacing, lg);
+
+      @include respond-to(laptop) {
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      }
+
+      a {
+        text-decoration: none;
+      }
 
       .gallery__nft-container {
-        .gallery__nft-heading {}
+        padding: map-get($spacing, md) map-get($spacing, lg);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+
+        .gallery__nft-heading {
+          color: rgb(255, 255, 255);
+          font-size: clamp(1rem, 2.5vw, 2rem);
+          font-weight: 100;
+          letter-spacing: 1px;
+          font-family: 'Rubik Beastly', cursive;
+        }
 
         .gallery__nft-img {
+          gap: map-get($spacing, md);
+
           img {
-            width: 160px;
+            width: 600px;
+            border-radius: 10%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: transform 0.3s ease;
+
+            @include respond-to(laptop) {
+              width: 160px;
+            }
+
+            &:hover {
+              transform: scale(1.05);
+            }
           }
         }
+      }
+    }
+
+    .gallery__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 200px 0;
+
+      &__p {
+        padding: map-get($spacing, lg) 0;
+        font-size: clamp(1rem, 2.5vw, 1.5rem);
+      }
+
+      &__banner {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+          width: 30%;
+          height: 30%;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          transition: transform 0.3s ease;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      &__download {
+        padding: map-get($spacing, lg) 0;
+        font-size: clamp(1rem, 2.5vw, 2rem);
       }
     }
   }

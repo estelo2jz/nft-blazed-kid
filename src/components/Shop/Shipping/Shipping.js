@@ -6,7 +6,7 @@ import "./shipping.scss";
 
 export default function Shipping() {
   const value = useContext(DataContext);
-  const [cart, setCart] = value.cart;
+  const [cart] = value.cart;
   const [total, setTotal] = useState(0);
 
   useEffect(() => {

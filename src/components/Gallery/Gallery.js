@@ -1,13 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import NFTDataOne from "../Home/data";
+// import { Link } from "react-router-dom";
+// import NFTDataOne from "../Home/data";
 import "./gallery.scss";
+import CardOne from "./CardOne";
 
 function Gallery() {
   return (
     <div className="gallery__container">
       <div id="overview" className="gallery__section-content">
-        {NFTDataOne.map((item, index) => {
+        <CardOne title img currentPrice />
+        {/* {NFTDataOne.map((item, index) => {
           return (
             <Link to="/nft">
               <div key={index} className="gallery__nft-container">
@@ -20,7 +22,7 @@ function Gallery() {
               </div>
             </Link>
           );
-        })}
+        })} */}
       </div>
     </div>
   );

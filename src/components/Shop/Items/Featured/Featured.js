@@ -6,7 +6,6 @@ import "./featured.scss";
 export default function Featured() {
   const value = useContext(DataContext);
   const [products] = value.products;
-  const addCart = value.addCart;
 
   return (
     <div className="featured">

@@ -1,10 +1,9 @@
 import React from "react";
 import "./home.scss";
 
-import BKBanner from "../../assets/featured/BKBanner.png";
-import BKBannerTM from "./BKBannerTrademark.png";
-import BKPhone1 from "./Blazked_Kid_Phone-Wallpaper-001.JPG";
-import BKPhone2 from "./Blazked_Kid_Phone-Wallpaper-002.JPG";
+// import BKBanner from "../../assets/featured/BKBanner.png";
+// import BKBannerTM from "./BKBannerTrademark.png";
+// import BKPhone1 from "./Blazked_Kid_Phone-Wallpaper-001.JPG";
 
 const Home = () => {
   return (
@@ -23,10 +22,9 @@ const Home = () => {
             NFT's
           </section>
         </div>
-        <div href="#overview" className="home__overview">
+        {/* <div href="#overview" className="home__overview">
           <p>OVERVIEW</p>
           <ul>
-            <li>​These Blazed Kid are 100% hand-made​</li>
             <li>999 Blazed Kid will blazed at the same time.</li>
             <li>Legendary Blazed Kid : There is only 10 of them existed</li>
             <li>
@@ -39,10 +37,10 @@ const Home = () => {
             </li>
             <li>Common Blazed Kid : 50% of the Blazed Kid will be common</li>
           </ul>
-        </div>
+        </div> */}
       </div>
 
-      <div className="home__bottom-container">
+      {/* <div className="home__bottom-container">
         <div className="home__bottom">
           <div className="home__bottom__p">
             <p>Free Banner Get It Now!</p>
@@ -69,7 +67,7 @@ const Home = () => {
             </a>
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

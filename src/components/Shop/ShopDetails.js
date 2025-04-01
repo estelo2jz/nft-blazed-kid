@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 import { DataContext } from "./DataProvider";
 import Sizes from "./Sizes";
 import DetailsThumb from "./ShopDetailsThumb";
-import { Link } from "react-router-dom";
 import "./shopDetails.scss";
 
 import Featured from "../Shop/Items/Featured/Featured";
@@ -17,7 +16,7 @@ export default function Details() {
   const [index, setIndex] = useState(0);
   const imgDiv = useRef();
 
-  const details = products.filter((product, index) => {
+  const details = products.filter((product) => {
     return product._id === id;
   });
 
