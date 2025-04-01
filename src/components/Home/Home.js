@@ -15,11 +15,9 @@ const Home = () => {
             <span>Kid</span>
           </p>
           <section>
-            These Blazed Kid NTF's has been around for a very short time, but
+            These Blazed Kid NTF has been around for a very short time, but
             only just now they decided to Blazed themselves, but there is only
             one problem, they blazing themselves, and they connot be stop.{" "}
-            <br></br>The only way to stop them is to capture all 999 Blazed Kid
-            NFT's
           </section>
         </div>
         {/* <div href="#overview" className="home__overview">
