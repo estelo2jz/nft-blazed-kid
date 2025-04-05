@@ -18,7 +18,6 @@ import Nav from "./components/Navigation/Nav";
 import SubHeader from "./components/Navigation/SubHeader";
 import Home from "./components/Home/Home";
 import NFT from "./components/NFT/NFT";
-// import Footer from "./components/Footer/Footer";
 import ScrollToTop from "./ScrollToTop";
 import ErrorPage from "./Pages/ErrorPage";
 import Shop from "./components/Shop/Shop";
