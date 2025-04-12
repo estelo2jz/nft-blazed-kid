@@ -1,6 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+
+// Keyframes
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Core Styles
 .home {
   padding: 4rem 2rem;
-  background-color: #0f0f0f;
+  background-color: #000000;
   color: #f3f4f6;
   font-family: 'Orbitron', sans-serif;
 
@@ -9,17 +24,21 @@
     margin: 0 auto;
     display: grid;
     gap: 3rem;
+    animation: fadeUp 1s ease-out forwards;
 
     .home__intro {
+      animation: fadeUp 1.2s ease-out forwards;
       h1 {
         font-size: 2.5rem;
         font-weight: 800;
         line-height: 1.2;
         color: #fff;
+        transition: color 0.3s ease;
 
         span {
           color: #e11d48;
           text-shadow: 0 0 10px rgba(225, 29, 72, 0.7);
+          transition: text-shadow 0.3s ease;
         }
       }
 
@@ -28,10 +47,13 @@
         color: #9ca3af;
         margin-top: 1rem;
         line-height: 1.8;
+        opacity: 0.9;
+        transition: opacity 0.3s ease;
       }
     }
 
     .home__overview {
+      animation: fadeUp 1.4s ease-out forwards;
       h2 {
         font-size: 1.75rem;
         color: #fbbf24;
@@ -46,9 +68,23 @@
           margin-bottom: 0.75rem;
           font-size: 1rem;
           color: #e5e7eb;
+          position: relative;
+          padding-left: 1rem;
+          transition: transform 0.3s ease;
+
+          &:before {
+            content: '🔥';
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
 
           strong {
             color: #22d3ee;
+          }
+
+          &:hover {
+            transform: translateX(5px);
           }
         }
       }
@@ -69,16 +105,21 @@
       padding: 2rem;
       text-align: center;
       width: 300px;
-      transition: transform 0.3s ease;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      opacity: 0;
+      transform: translateY(30px);
+      animation: fadeUp 1s ease forwards;
 
       &:hover {
-        transform: translateY(-8px);
+        transform: translateY(-8px) scale(1.02);
+        box-shadow: 0 10px 25px rgba(255, 0, 0, 0.1);
       }
 
       h3 {
         font-size: 1.25rem;
         color: #f87171;
         margin-bottom: 1rem;
+        font-weight: 700;
       }
 
       img {
@@ -86,6 +127,11 @@
         border-radius: 0.5rem;
         margin-bottom: 1rem;
         box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+        transition: transform 0.4s ease;
+
+        &:hover {
+          transform: scale(1.03);
+        }
       }
 
       .btn-download {
@@ -96,11 +142,31 @@
         font-weight: 600;
         border-radius: 0.5rem;
         text-decoration: none;
-        transition: background 0.3s ease;
+        transition: background 0.3s ease, transform 0.3s ease;
 
         &:hover {
           background-color: #be123c;
+          transform: scale(1.05);
         }
+      }
+    }
+  }
+
+  // Responsive
+  @media screen and (max-width: 768px) {
+    .home__container {
+      gap: 2rem;
+
+      .home__intro h1 {
+        font-size: 2rem;
+      }
+
+      .home__overview h2 {
+        font-size: 1.5rem;
+      }
+
+      .home__downloads .home__download-card {
+        width: 100%;
       }
     }
   }

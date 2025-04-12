@@ -1,13 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+// Keyframes
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Base Styles
 .nft {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
-  padding: 1rem;
-  // background-color: #0f0f0f;
-  margin-bottom: 0px !important;
-  height: 50vh;
+  padding: 2rem;
+  margin-bottom: 0;
+  min-height: 60vh;
+  background-color: #000000;
 
   .nft__card {
     max-width: 360px;
@@ -15,13 +30,24 @@
     border-radius: 1rem;
     overflow: hidden;
     cursor: pointer;
+    background-color: #000000;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeUp 0.8s ease-out forwards;
 
-    // &:hover {
-    //   transform: translateY(-10px) scale(1.02);
-    //   box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
-    // }
+    // Staggered card animation
+    &:nth-child(1) { animation-delay: 0.1s; }
+    &:nth-child(2) { animation-delay: 0.2s; }
+    &:nth-child(3) { animation-delay: 0.3s; }
+    &:nth-child(4) { animation-delay: 0.4s; }
+    &:nth-child(5) { animation-delay: 0.5s; }
+
+    &:hover {
+      transform: translateY(-10px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(59, 130, 246, 0.25);
+    }
 
     img {
       width: 100%;
@@ -29,7 +55,7 @@
       object-fit: cover;
       display: block;
       border-radius: 0.75rem 0.75rem 0 0;
-      transition: transform 0.3s ease;
+      transition: transform 0.35s ease;
 
       &:hover {
         transform: scale(1.03);
@@ -37,16 +63,17 @@
     }
 
     .nft__box {
-      padding: 1rem;
+      padding: 1.25rem;
 
       h3 {
-        font-size: 1.1rem;
+        font-size: 1.2rem;
         text-transform: uppercase;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.75rem;
         color: #ffffff;
+        font-family: 'Orbitron', sans-serif;
       }
 
       p {
@@ -57,7 +84,7 @@
         -webkit-line-clamp: 3;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.75rem;
         min-height: 70px;
       }
 
@@ -79,16 +106,18 @@
         cursor: pointer;
         text-transform: uppercase;
         letter-spacing: 1px;
-        transition: background 0.3s ease;
+        transition: background 0.3s ease, transform 0.3s ease;
 
         &:hover {
           background: darken(#3b82f6, 10%);
+          transform: scale(1.03);
         }
       }
     }
   }
 }
 
+// Responsive Styles
 @media screen and (max-width: 500px) {
   .nft {
     padding: 1rem 0.5rem;
@@ -98,7 +127,7 @@
       max-width: 100%;
 
       .nft__box {
-        padding: 0.75rem;
+        padding: 1rem;
 
         h3 {
           font-size: 1rem;

@@ -15,10 +15,6 @@ $breakpoints: (
   desktop: 1280px
 );
 
-.gallery__container {
-  margin: 0 !important;
-}
-
 $font-heading: 'Rubik Beastly', cursive;
 $color-bg: #0f172a;
 $color-card: #000000;
@@ -32,12 +28,31 @@ $color-accent: #3b82f6;
   }
 }
 
-// Global Styles
+// ------------------
+// Animation Keyframes
+// ------------------
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// ------------------
+// Component Styles
+// ------------------
+.gallery__container {
+  margin: 0 !important;
+}
+
 .gallery {
   &__container {
     padding: map-get($spacing, xl) map-get($spacing, lg);
-    background-color: #0f0f0f;
-
+    background-color: #000000;
 
     .gallery__section-content {
       margin-top: 100px;
@@ -63,13 +78,18 @@ $color-accent: #3b82f6;
         justify-content: center;
         flex-direction: column;
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeUp 0.8s ease-out forwards;
+        transition: all 0.4s ease;
 
+        // Hover effect
         &:hover {
           transform: translateY(-10px) scale(1.02);
           box-shadow: 0 12px 36px rgba(59, 130, 246, 0.25);
         }
 
+        // Heading
         .gallery__nft-heading {
           color: $color-text;
           font-size: clamp(1.2rem, 2.5vw, 2rem);
@@ -78,6 +98,7 @@ $color-accent: #3b82f6;
           margin-bottom: map-get($spacing, md);
         }
 
+        // Image styling
         .gallery__nft-img {
           display: flex;
           justify-content: center;
@@ -88,8 +109,8 @@ $color-accent: #3b82f6;
             max-width: 600px;
             border-radius: 12px;
             object-fit: cover;
-            transition: transform 0.3s ease;
             aspect-ratio: 1 / 1;
+            transition: transform 0.35s ease;
 
             @include respond-to(laptop) {
               max-width: 180px;
@@ -101,8 +122,16 @@ $color-accent: #3b82f6;
           }
         }
       }
+
+      // Apply staggered delay to all cards dynamically up to 50 cards
+      @for $i from 1 through 50 {
+        .gallery__nft-container:nth-child(#{$i}) {
+          animation-delay: #{0.05s * $i};
+        }
+      }
     }
 
+    // Footer/Banner
     .gallery__bottom {
       display: flex;
       flex-direction: column;
