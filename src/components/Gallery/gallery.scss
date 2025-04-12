@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
 
 // Variables
@@ -16,6 +15,16 @@ $breakpoints: (
   desktop: 1280px
 );
 
+.gallery__container {
+  margin: 0 !important;
+}
+
+$font-heading: 'Rubik Beastly', cursive;
+$color-bg: #0f172a;
+$color-card: #000000;
+$color-text: #ffffff;
+$color-accent: #3b82f6;
+
 // Mixins
 @mixin respond-to($breakpoint) {
   @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
@@ -26,55 +35,64 @@ $breakpoints: (
 // Global Styles
 .gallery {
   &__container {
-    margin-bottom: 200px;
+    padding: map-get($spacing, xl) map-get($spacing, lg);
+    background-color: #0f0f0f;
+
 
     .gallery__section-content {
       margin-top: 100px;
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
       gap: map-get($spacing, lg);
 
       @include respond-to(laptop) {
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       }
 
       a {
         text-decoration: none;
+        color: inherit;
       }
 
       .gallery__nft-container {
-        padding: map-get($spacing, md) map-get($spacing, lg);
+        background-color: $color-card;
+        border-radius: 1rem;
+        padding: map-get($spacing, md);
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        transition: transform 0.3s ease;
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
 
         &:hover {
-          transform: translateY(-5px);
+          transform: translateY(-10px) scale(1.02);
+          box-shadow: 0 12px 36px rgba(59, 130, 246, 0.25);
         }
 
         .gallery__nft-heading {
-          color: rgb(255, 255, 255);
-          font-size: clamp(1rem, 2.5vw, 2rem);
-          font-weight: 100;
-          letter-spacing: 1px;
-          font-family: 'Rubik Beastly', cursive;
+          color: $color-text;
+          font-size: clamp(1.2rem, 2.5vw, 2rem);
+          font-family: $font-heading;
+          text-align: center;
+          margin-bottom: map-get($spacing, md);
         }
 
         .gallery__nft-img {
-          gap: map-get($spacing, md);
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
           img {
-            width: 600px;
-            border-radius: 10%;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
+            width: 100%;
+            max-width: 600px;
+            border-radius: 12px;
+            object-fit: cover;
             transition: transform 0.3s ease;
+            aspect-ratio: 1 / 1;
 
             @include respond-to(laptop) {
-              width: 160px;
+              max-width: 180px;
             }
 
             &:hover {
@@ -90,10 +108,12 @@ $breakpoints: (
       flex-direction: column;
       align-items: center;
       padding: 200px 0;
+      text-align: center;
 
       &__p {
         padding: map-get($spacing, lg) 0;
         font-size: clamp(1rem, 2.5vw, 1.5rem);
+        color: $color-text;
       }
 
       &__banner {
@@ -102,15 +122,14 @@ $breakpoints: (
         align-items: center;
 
         img {
-          width: 30%;
-          height: 30%;
-          background-size: cover;
-          background-position: center;
-          background-repeat: no-repeat;
-          transition: transform 0.3s ease;
+          width: 100%;
+          max-width: 350px;
+          height: auto;
+          border-radius: 10px;
+          transition: transform 0.4s ease;
 
           &:hover {
-            transform: scale(1.1);
+            transform: scale(1.05);
           }
         }
       }
@@ -118,6 +137,17 @@ $breakpoints: (
       &__download {
         padding: map-get($spacing, lg) 0;
         font-size: clamp(1rem, 2.5vw, 2rem);
+        color: $color-accent;
+
+        a {
+          color: $color-accent;
+          font-weight: bold;
+          text-decoration: underline;
+
+          &:hover {
+            color: lighten($color-accent, 10%);
+          }
+        }
       }
     }
   }

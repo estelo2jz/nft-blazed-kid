@@ -22,7 +22,7 @@ const Footer = () => {
           <FaPinterest />
         </span> */}
       </div>
-      &#169;2022 by Blazed Kid
+      &#169;2025 by Blazed Kid
     </div>
   );
 };

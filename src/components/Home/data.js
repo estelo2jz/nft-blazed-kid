@@ -64,7 +64,7 @@ const NFTDataOne = [
     img: BK07,
   },
   {
-    title: 'Violets are Blue',
+    title: 'Violets R. Blue',
     path: 'https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/15394711830402302930042362243392948616199013128938209027585602459097741918209',
     currentPrice: '1.1 ETH',
     img: BK08

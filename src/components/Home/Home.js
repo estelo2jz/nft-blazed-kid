@@ -1,72 +1,52 @@
 import React from "react";
 import "./home.scss";
 
-// import BKBanner from "../../assets/featured/BKBanner.png";
-// import BKBannerTM from "./BKBannerTrademark.png";
-// import BKPhone1 from "./Blazked_Kid_Phone-Wallpaper-001.JPG";
+import BKBanner from "../../assets/featured/BKBanner.png";
+import BKBannerTM from "./BKBannerTrademark.png";
+import BKPhone1 from "./Blazked_Kid_Phone-Wallpaper-001.JPG";
 
 const Home = () => {
   return (
-    <div id="home" className="home">
+    <section id="home" className="home">
       <div className="home__container">
-        <div className="home__summary">
-          <p>
-            Welcome to <span>Blazed</span>
-            <span>Kid</span>
+        <div className="home__intro">
+          <h1>
+            Welcome to <span>Blazed</span> <span>Kid</span>
+          </h1>
+          <p className="home__description">
+            The Blazed Kid NFTs are heating up the digital space. They’ve just started blazing — and there’s no turning back. Scarcity, rarity, and unstoppable style. Are you ready to own the flame?
           </p>
-          <section>
-            These Blazed Kid NTF has been around for a very short time, but
-            only just now they decided to Blazed themselves, but there is only
-            one problem, they blazing themselves, and they connot be stop.{" "}
-          </section>
         </div>
-        {/* <div href="#overview" className="home__overview">
-          <p>OVERVIEW</p>
+
+        {/* <div className="home__overview">
+          <h2>🔥 Collection Overview</h2>
           <ul>
-            <li>999 Blazed Kid will blazed at the same time.</li>
-            <li>Legendary Blazed Kid : There is only 10 of them existed</li>
-            <li>
-              Rare Blazed Kid : Less than 15% of them will be rare (Nose
-              Piercing)
-            </li>
-            <li>
-              Uncommon Blazed Kid : Less than 40% of them will be Uncommon
-              (Unique)
-            </li>
-            <li>Common Blazed Kid : 50% of the Blazed Kid will be common</li>
+            <li><strong>999</strong> Blazed Kids will blaze together in the drop</li>
+            <li><strong>Legendary</strong>: Only <strong>10</strong> exist</li>
+            <li><strong>Rare</strong>: < 15% (with nose piercings)</li>
+            <li><strong>Uncommon</strong>: < 40% (unique designs)</li>
+            <li><strong>Common</strong>: ~50% of total supply</li>
           </ul>
         </div> */}
       </div>
 
-      {/* <div className="home__bottom-container">
-        <div className="home__bottom">
-          <div className="home__bottom__p">
-            <p>Free Banner Get It Now!</p>
-          </div>
-          <div className="home__bottom__banner">
-            <img src={BKBanner} alt="Banner" />
-          </div>
-          <div className="home__bottom__download">
-            <a href={BKBannerTM} download="BKBanner">
-              Click to download
-            </a>
-          </div>
+      <div className="home__downloads">
+        <div className="home__download-card">
+          <h3>🎁 Free Banner</h3>
+          <img src={BKBanner} alt="Free Banner" />
+          <a href={BKBannerTM} download="BKBanner" className="btn-download">
+            Click to Download
+          </a>
         </div>
-        <div className="home__bottom">
-          <div className="home__bottom__p">
-            <p>Free Phone Wallpaper Get It Now!</p>
-          </div>
-          <div className="home__bottom__banner">
-            <img src={BKPhone1} alt="Banner" />
-          </div>
-          <div className="home__bottom__download">
-            <a href={BKPhone1} download="BKPhone1">
-              Click to download
-            </a>
-          </div>
+        <div className="home__download-card">
+          <h3>📱 Phone Wallpaper</h3>
+          <img src={BKPhone1} alt="Phone Wallpaper" />
+          <a href={BKPhone1} download="BKPhone1" className="btn-download">
+            Click to Download
+          </a>
         </div>
-      </div> */}
-    </div>
+      </div>
+    </section>
   );
 };
 
