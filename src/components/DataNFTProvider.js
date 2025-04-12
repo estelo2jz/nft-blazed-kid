@@ -31,7 +31,7 @@ export const DataNFTProvider = (props) => {
   const [products, setProducts] = useState([
     {
       _id: uuidv4(),
-      title: "Blazed Kid Braces Collection",
+      title: "Braces Collection",
       src: "https://opensea.io/collection/blazed-kid-nft",
       images: [BK01, BK02, BK03, BK04, BK05, BK06, BK07, BK08, BK09, BK010],
       description: "",
@@ -43,7 +43,7 @@ export const DataNFTProvider = (props) => {
     },
     {
       _id: uuidv4(),
-      title: "Blazed Kid LOL Collection",
+      title: "LOL Collection",
       src: "https://opensea.io/collection/blazed-kid-nft",
       images: [
         BK011,
