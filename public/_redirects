@@ -1,0 +1,8 @@
+# Enforce HTTPS and root domain (no www)
+https://www.jdmspark.com/*  https://jdmspark.com/:splat  301!
+http://www.jdmspark.com/*   https://jdmspark.com/:splat  301!
+http://jdmspark.com/*       https://jdmspark.com/:splat  301!
+
+# Catch-all: redirect all routes to index.html (for React Router SPA)
+# Remove if you're using traditional pages
+/*  /index.html  200
