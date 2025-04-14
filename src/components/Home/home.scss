@@ -99,8 +99,8 @@
     margin-top: 4rem;
 
     .home__download-card {
-      background: #1c1c1c;
-      border: 1px solid #2f2f2f;
+      // background: #1c1c1c;
+      // border: 1px solid #2f2f2f;
       border-radius: 1rem;
       padding: 2rem;
       text-align: center;
@@ -342,7 +342,8 @@ p {
 
 /* =============== Hero =============== */
 .hero {
-  background: linear-gradient(145deg, #161616, #0d0d0d);
+  // background: linear-gradient(145deg, #161616, #0d0d0d);
+  background: #000;
   text-align: center;
   padding: 6rem 2rem;
 
@@ -373,6 +374,7 @@ p {
 /* =============== Featured Collection =============== */
 .featured-collection {
   text-align: center;
+  background: #000;
 
   .grid {
     display: grid;
@@ -409,7 +411,8 @@ p {
 
 /* =============== Utility =============== */
 .utility {
-  background: #111;
+  background: #000;
+
   text-align: center;
 
   ul {
@@ -428,7 +431,8 @@ p {
 
 /* =============== How It Works =============== */
 .how-it-works {
-  text-align: center;
+      background: #000;
+      text-align: center;
 
   .steps {
     display: flex;
@@ -448,7 +452,8 @@ p {
 
 /* =============== Testimonials =============== */
 .testimonials {
-  background: #121212;
+  background: #000;
+
 
   .quotes {
     display: flex;
@@ -475,7 +480,8 @@ p {
 
 /* =============== Roadmap =============== */
 .roadmap {
-  background: #0f0f0f;
+  background: #000;
+
 
   ol {
     list-style: none;
@@ -494,7 +500,8 @@ p {
 
 /* =============== FAQ =============== */
 .faq {
-  background: #161616;
+  background: #000;
+
 
   .qa {
     margin-top: 2rem;
@@ -523,6 +530,7 @@ p {
 /* =============== Newsletter =============== */
 .newsletter {
   text-align: center;
+  background: #000;
 
   form {
     margin-top: 1.5rem;
