@@ -2,22 +2,35 @@ import React from "react";
 import { Link } from "react-router-dom";
 import NFTDataOne from "../Home/data";
 import "./gallery.scss";
-// import CardOne from "./CardOne";
 
 function Gallery() {
   return (
     <div className="gallery__container">
+      <div className="gallery__header">
+        <h1>Blazed Kid Gallery</h1>
+        <p>Explore the complete collection of rare digital assets on-chain.</p>
+      </div>
+
       <div id="overview" className="gallery__section-content">
-        {/* <CardOne title img currentPrice /> */}
         {NFTDataOne.map((item, index) => {
+          // Calculate a staggered delay based on the card index (e.g., 0.08s per item)
+          const animationDelay = `${index * 0.08}s`;
+
           return (
-            <Link to="/nft">
-              <div key={index} className="gallery__nft-container">
+            <Link 
+              to="/nft" 
+              key={index} 
+              className="gallery__nft-link-wrapper"
+              style={{ "--delay": animationDelay }}
+            >
+              <div className="gallery__nft-container">
+                <div className="gallery__nft-img">
+                  <img src={item.img} alt={item.title || "NFT item"} />
+                  <div className="gallery__img-overlay"></div>
+                </div>
                 <div className="gallery__nft-heading">
                   <h3>{item.title}</h3>
-                </div>
-                <div className="gallery__nft-img">
-                  <img src={item.img} alt="NTF's" />
+                  <span className="view-tag">View Asset →</span>
                 </div>
               </div>
             </Link>
@@ -29,32 +42,3 @@ function Gallery() {
 }
 
 export default Gallery;
-
-
-
-// import React from "react";
-// import { Link } from "react-router-dom";
-// import NFTDataOne from "../Home/data";
-// import "./gallery.scss";
-
-// const Gallery = () => {
-//   return (
-//     <div className="gallery__container">
-//       <div id="overview" className="gallery__grid">
-//         {NFTDataOne.map((item, index) => (
-//           <Link to={`/nft/${item.id}`} key={item.id || index} className="gallery__card">
-//             <div className="gallery__image-wrapper">
-//               <img src={item.img} alt={item.title} className="gallery__image" />
-//             </div>
-//             <div className="gallery__content">
-//               <h3 className="gallery__title">{item.title}</h3>
-//               {/* Optionally: <p>{item.description}</p> */}
-//             </div>
-//           </Link>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Gallery;

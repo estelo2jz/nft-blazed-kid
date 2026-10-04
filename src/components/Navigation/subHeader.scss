@@ -1,28 +1,132 @@
-.subHeader {
-  background-color: #000000 !important;
+/* ==========================================
+   BLAZED KID - MODERN GLASSMORPHIC NAVIGATION
+   ========================================== */
 
-  height: 200px;
-  padding: 10px;
-  // display: flex;
-  // align-items:center;
-  .subHeader__nav {
+$bg-color: #0b0914;
+$surface-color: rgba(21, 17, 36, 0.85);
+$surface-hover: rgba(30, 24, 52, 0.95);
+$border-color: rgba(255, 122, 0, 0.2);
+$border-glow: rgba(255, 122, 0, 0.5);
+$primary-orange: #ff7a00;
+$secondary-flame: #ff3366;
+$text-main: #f3f4f6;
+$text-muted: #9ca3af;
+
+.subHeader {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background: rgba(11, 9, 20, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+
+  &__nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 10px;
-    span {
-      padding: 0px 20px;
-      color: white;
-      font-size: 20px;
+    justify-content: space-between;
+
+    /* Brand Logo */
+    .subHeader__brand {
+      .brand-logo {
+        font-size: 1.25rem;
+        font-weight: 800;
+        text-decoration: none;
+        color: $text-main;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.02);
+        }
+
+        .flame-icon {
+          font-size: 1.1rem;
+        }
+
+        span {
+          background: linear-gradient(135deg, $primary-orange, $secondary-flame);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      }
+    }
+
+    /* Navigation Links Container */
+    .subHeader__nav-inner {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: $surface-color;
+      border: 1px solid $border-color;
+      padding: 0.4rem;
+      border-radius: 50px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+      .nav-link {
+        color: $text-muted;
+        text-decoration: none;
+        padding: 0.5rem 1.25rem;
+        border-radius: 40px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        position: relative;
+
+        &:hover {
+          color: $text-main;
+          background: rgba(255, 255, 255, 0.05);
+        }
+
+        &.active {
+          color: #fff;
+          background: linear-gradient(135deg, $primary-orange, $secondary-flame);
+          box-shadow: 0 4px 15px rgba(255, 122, 0, 0.35);
+        }
+      }
+    }
+
+    /* Action Button (e.g. Wallet Connect) */
+    .subHeader__actions {
+      .btn-wallet {
+        background: $surface-color;
+        border: 1px solid $border-color;
+        color: $text-main;
+        padding: 0.6rem 1.25rem;
+        border-radius: 12px;
+        font-size: 0.9rem;
+        font-weight: 600;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+        &:hover {
+          background: $surface-hover;
+          border-color: $border-glow;
+          color: $primary-orange;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(255, 122, 0, 0.2);
+        }
+      }
     }
   }
-}
 
-@media screen and (max-width: 500px) {
-  .subHeader {
-    .subHeader__nav {
-      span {
-        padding: 0px 10px;
+  /* Responsive styling for smaller screens */
+  @media (max-width: 768px) {
+    &__nav {
+      padding: 0.85rem 1rem;
+
+      .subHeader__actions {
+        display: none; /* Hide wallet button on small mobile if space is tight */
       }
     }
   }

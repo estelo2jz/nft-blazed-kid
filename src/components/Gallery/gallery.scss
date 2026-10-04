@@ -1,180 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap');
+/* ==========================================
+   BLAZED KID - GALLERY STYLING WITH STAGGERED ANIMATIONS
+   ========================================== */
 
-// Variables
-$spacing: (
-  sm: 5px,
-  md: 10px,
-  lg: 20px,
-  xl: 30px
-);
+$bg-color: #0b0914;
+$surface-color: #151124;
+$surface-hover: #1e1834;
+$border-color: rgba(255, 122, 0, 0.15);
+$border-glow: rgba(255, 122, 0, 0.4);
+$primary-orange: #ff7a00;
+$secondary-flame: #ff3366;
+$text-main: #f3f4f6;
+$text-muted: #9ca3af;
 
-$breakpoints: (
-  mobile: 640px,
-  tablet: 768px,
-  laptop: 1024px,
-  desktop: 1280px
-);
-
-$font-heading: 'Rubik Beastly', cursive;
-$color-bg: #0f172a;
-$color-card: #000000;
-$color-text: #ffffff;
-$color-accent: #3b82f6;
-
-// Mixins
-@mixin respond-to($breakpoint) {
-  @media screen and (max-width: map-get($breakpoints, $breakpoint)) {
-    @content;
-  }
-}
-
-// ------------------
-// Animation Keyframes
-// ------------------
-@keyframes fadeUp {
+/* Staggered entrance animation */
+@keyframes cardFadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(30px);
+    transform: translateY(30px) scale(0.96);
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
 }
 
-// ------------------
-// Component Styles
-// ------------------
 .gallery__container {
-  margin: 0 !important;
-}
+  background-color: $bg-color;
+  color: $text-main;
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
 
-.gallery {
-  &__container {
-    padding: map-get($spacing, xl) map-get($spacing, lg);
-    background-color: #000000;
+  .gallery__header {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 4rem auto;
 
-    .gallery__section-content {
-      margin-top: 100px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: map-get($spacing, lg);
+    h1 {
+      font-size: clamp(2.2rem, 4vw, 3.5rem);
+      font-weight: 800;
+      margin-bottom: 0.75rem;
+      background: linear-gradient(135deg, #ff7a00, #ff3366);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
 
-      @include respond-to(laptop) {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-      }
+    p {
+      color: $text-muted;
+      font-size: 1.1rem;
+    }
+  }
 
-      a {
-        text-decoration: none;
-        color: inherit;
-      }
+  .gallery__section-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 2rem;
+
+    .gallery__nft-link-wrapper {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+      /* Apply entrance animation with individual dynamic delay */
+      animation: cardFadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      animation-delay: var(--delay, 0s);
+      opacity: 0; // Starts hidden until animation triggers
 
       .gallery__nft-container {
-        background-color: $color-card;
-        border-radius: 1rem;
-        padding: map-get($spacing, md);
+        background: $surface-color;
+        border: 1px solid $border-color;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
         display: flex;
-        align-items: center;
-        justify-content: center;
         flex-direction: column;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-        opacity: 0;
-        transform: translateY(30px);
-        animation: fadeUp 0.8s ease-out forwards;
-        transition: all 0.4s ease;
+        height: 100%;
 
-        // Hover effect
         &:hover {
-          transform: translateY(-10px) scale(1.02);
-          box-shadow: 0 12px 36px rgba(59, 130, 246, 0.25);
+          transform: translateY(-8px);
+          border-color: $border-glow;
+          box-shadow: 0 20px 40px rgba(255, 122, 0, 0.2);
+
+          .gallery__nft-img img {
+            transform: scale(1.08);
+          }
+
+          .view-tag {
+            color: $primary-orange;
+            transform: translateX(4px);
+          }
         }
 
-        // Heading
-        .gallery__nft-heading {
-          color: $color-text;
-          font-size: clamp(1.2rem, 2.5vw, 2rem);
-          font-family: $font-heading;
-          text-align: center;
-          margin-bottom: map-get($spacing, md);
-        }
-
-        // Image styling
         .gallery__nft-img {
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          position: relative;
+          width: 100%;
+          height: 260px;
+          overflow: hidden;
+          background: #090710;
 
           img {
             width: 100%;
-            max-width: 600px;
-            border-radius: 12px;
+            height: 100%;
             object-fit: cover;
-            aspect-ratio: 1 / 1;
-            transition: transform 0.35s ease;
+            transition: transform 0.5s ease;
+          }
 
-            @include respond-to(laptop) {
-              max-width: 180px;
-            }
-
-            &:hover {
-              transform: scale(1.05);
-            }
+          .gallery__img-overlay {
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(to top, rgba(11, 9, 20, 0.6), transparent);
+            opacity: 0.4;
           }
         }
-      }
 
-      // Apply staggered delay to all cards dynamically up to 50 cards
-      @for $i from 1 through 50 {
-        .gallery__nft-container:nth-child(#{$i}) {
-          animation-delay: #{0.05s * $i};
-        }
-      }
-    }
+        .gallery__nft-heading {
+          padding: 1.25rem;
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+          flex-grow: 1;
+          justify-content: space-between;
 
-    // Footer/Banner
-    .gallery__bottom {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 200px 0;
-      text-align: center;
-
-      &__p {
-        padding: map-get($spacing, lg) 0;
-        font-size: clamp(1rem, 2.5vw, 1.5rem);
-        color: $color-text;
-      }
-
-      &__banner {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        img {
-          width: 100%;
-          max-width: 350px;
-          height: auto;
-          border-radius: 10px;
-          transition: transform 0.4s ease;
-
-          &:hover {
-            transform: scale(1.05);
+          h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: $text-main;
+            margin: 0;
           }
-        }
-      }
 
-      &__download {
-        padding: map-get($spacing, lg) 0;
-        font-size: clamp(1rem, 2.5vw, 2rem);
-        color: $color-accent;
-
-        a {
-          color: $color-accent;
-          font-weight: bold;
-          text-decoration: underline;
-
-          &:hover {
-            color: lighten($color-accent, 10%);
+          .view-tag {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: $text-muted;
+            transition: all 0.3s ease;
+            display: inline-block;
           }
         }
       }

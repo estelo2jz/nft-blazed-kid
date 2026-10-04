@@ -9,134 +9,127 @@ import BKPhone1 from "./Blazked_Kid_Phone-Wallpaper-001.JPG";
 const Home = () => {
   return (
     <section id="home" className="home">
+      {/* Background ambient glowing orbs for depth */}
+      <div className="home__glow-orb orb-1"></div>
+      <div className="home__glow-orb orb-2"></div>
+
+      {/* Hero / Main Intro Section */}
       <div className="home__container">
         <div className="home__intro">
           <h1>
-            Welcome to <span>Blazed</span> <span>Kid</span>
+            Welcome to <span className="highlight-blazed">Blazed</span>{" "}
+            <span className="highlight-kid">Kid</span>
           </h1>
           <p className="home__description">
-            The Blazed Kid NFTs are heating up the digital space. They’ve just started blazing — and there’s no turning back. Scarcity, rarity, and unstoppable style. Are you ready to own the flame?
+            The Blazed Kid NFTs are heating up the digital space. They’ve just
+            started blazing — and there’s no turning back. Scarcity, rarity, and
+            unstoppable style. Are you ready to own the flame?
           </p>
+          <div className="home__cta-group">
+            <NavLink to="/gallery" className="btn-primary">
+              Explore Drops <span className="arrow">→</span>
+            </NavLink>
+            <a href="#downloads" className="btn-secondary">
+              Free Downloads
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className="home__downloads">
+      {/* Free Downloads Section */}
+      <div id="downloads" className="home__downloads">
         <div className="home__download-card">
+          <div className="card-tag">Exclusive Perk</div>
           <h3>🎁 Free Banner</h3>
-          <img src={BKBanner} alt="Free Banner" />
+          <div className="img-wrapper">
+            <img src={BKBanner} alt="Free Banner" />
+          </div>
           <a href={BKBannerTM} download="BKBanner" className="btn-download">
-            Click to Download
+            <span>Download Banner</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
           </a>
         </div>
+
         <div className="home__download-card">
+          <div className="card-tag">Mobile Asset</div>
           <h3>📱 Phone Wallpaper</h3>
-          <img src={BKPhone1} alt="Phone Wallpaper" />
+          <div className="img-wrapper">
+            <img src={BKPhone1} alt="Phone Wallpaper" />
+          </div>
           <a href={BKPhone1} download="BKPhone1" className="btn-download">
-            Click to Download
+            <span>Download Wallpaper</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
           </a>
         </div>
       </div>
-      <div className="nft-home">
-        {/* Hero Section */}
-        <section className="hero">
-          <NavLink to="/gallery" className="container">
-            <h1>Own a Piece of the Future</h1>
-            <p>Join the decentralized art revolution. Collect rare digital assets backed by blockchain.</p>
-            <button className="cta-btn">Explore Drops</button>
-          </NavLink>
-        </section>
 
+      <div className="nft-home">
         {/* Featured Collection */}
         <section className="featured-collection">
-          <h2>🔥 Trending Collections</h2>
+          <div className="section-header">
+            <h2>🔥 Trending Collections</h2>
+            <p>Hand-picked rarity from the latest blockchain blocks.</p>
+          </div>
           <div className="grid">
             {[1, 2, 3, 4].map((id) => (
               <div key={id} className="card">
-                <img src={`/images/nft-${id}.png`} alt={`NFT ${id}`} />
-                <h3>Blazed Series #{id}</h3>
-                <p>Floor: 0.05 ETH</p>
+                <div className="card-image-container">
+                  <img src={`/images/nft-${id}.png`} alt={`NFT ${id}`} />
+                  <span className="badge-live">Live</span>
+                </div>
+                <div className="card-content">
+                  <h3>Blazed Series #{id}</h3>
+                  <div className="card-footer-info">
+                    <span className="label">Floor Price</span>
+                    <span className="price">0.05 ETH</span>
+                  </div>
+                </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Utility Section */}
-        <section className="utility">
-          <h2>✨ NFT Utility</h2>
-          <ul>
-            <li>💳 Staking for token rewards</li>
-            <li>🎟️ Access to exclusive events</li>
-            <li>🛍️ Discounts in partnered metaverse stores</li>
-            <li>🌐 DAO governance access</li>
-          </ul>
-        </section>
-
+      
         {/* How it Works */}
-        <section className="how-it-works">
-          <h2>🧠 How It Works</h2>
-          <div className="steps">
-            <div className="step">1. Connect Wallet</div>
-            <div className="step">2. Discover Drops</div>
-            <div className="step">3. Mint or Trade NFTs</div>
-          </div>
-        </section>
+      
 
         {/* Testimonials */}
         <section className="testimonials">
           <h2>💬 What the Community Says</h2>
           <div className="quotes">
             <blockquote>
-              “BlazedKid NFTs changed how I see digital art — it’s more than hype.”
+              <p>“BlazedKid NFTs changed how I see digital art — it’s more than hype.”</p>
               <span>— @degenqueen</span>
             </blockquote>
             <blockquote>
-              “Easy to mint, exciting to collect. The roadmap is 🔥”
+              <p>“Easy to mint, exciting to collect. The roadmap is 🔥”</p>
               <span>— @nftsamurai</span>
             </blockquote>
           </div>
         </section>
 
-        {/* Roadmap */}
-        <section className="roadmap">
-          <h2>🚀 Roadmap</h2>
-          <ol>
-            <li><strong>Phase 1:</strong> Genesis Mint, Community Build</li>
-            <li><strong>Phase 2:</strong> Token + Staking Integration</li>
-            <li><strong>Phase 3:</strong> DAO Voting, Brand Partnerships</li>
-            <li><strong>Phase 4:</strong> Metaverse Expansion</li>
-          </ol>
-        </section>
-
-        {/* FAQ */}
-        <section className="faq">
-          <h2>❓ Frequently Asked Questions</h2>
-          <div className="qa">
-            <div>
-              <h4>What wallet do I need?</h4>
-              <p>You can use MetaMask or any wallet that supports Ethereum.</p>
-            </div>
-            <div>
-              <h4>Is this a limited collection?</h4>
-              <p>Yes. The Genesis drop is capped at 8,888 unique NFTs.</p>
-            </div>
-          </div>
-        </section>
 
         {/* Newsletter */}
         <section className="newsletter">
-          <h2>📬 Stay Updated</h2>
-          <p>Subscribe to mint alerts, whitelist drops, and news.</p>
-          <form>
-            <input type="email" placeholder="your@email.com" />
-            <button>Subscribe</button>
-          </form>
+          <div className="newsletter-box">
+            <h2>📬 Stay Updated</h2>
+            <p>Subscribe to mint alerts, whitelist drops, and news.</p>
+            <form onSubmit={(e) => e.preventDefault()}>
+              <input type="email" placeholder="your@email.com" required />
+              <button type="submit">Subscribe</button>
+            </form>
+          </div>
         </section>
 
         {/* Footer */}
         <footer className="footer">
           <p>© 2025 BlazedKid NFT. Powered by Ethereum. All rights reserved.</p>
           <div className="socials">
-            <a target="_blank" href="https://opensea.io/collection/blazed-kid-nft">Twitter</a> | <a target="_blank" href="https://opensea.io/collection/blazed-kid-nft" >Discord</a> | <a target="_blank" href="https://opensea.io/collection/blazed-kid-nft">Opensea</a>
+            <a target="_blank" rel="noreferrer" href="https://opensea.io/collection/blazed-kid-nft">Twitter</a>
+            <span>•</span>
+            <a target="_blank" rel="noreferrer" href="https://opensea.io/collection/blazed-kid-nft">Discord</a>
+            <span>•</span>
+            <a target="_blank" rel="noreferrer" href="https://opensea.io/collection/blazed-kid-nft">OpenSea</a>
           </div>
         </footer>
       </div>

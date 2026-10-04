@@ -33,7 +33,6 @@ function App() {
         <DataNFTProvider>
           <div className="App">
             <ScrollToTop />
-
             <Router>
               <Nav />
               <SubHeader />
